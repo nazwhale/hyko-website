@@ -1,7 +1,7 @@
 ---
 date: 2019-03-06T14:41:52.764Z
 title: Mark Zuckerberg - Facebook
-description: A Privacy-Focused Vision for Social Networking
+description: A privacy-focused vision for social networking
 tags:
   - facebook
   - security
