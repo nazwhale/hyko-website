@@ -1,17 +1,16 @@
 backend:
   name: github
-  repo: nazwhale/who-is-naz
+  repo: nazwhale/from-the-ceo
 
 media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: content/blog
+  - name: posts
+    label: Posts
+    folder: content/posts
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: description, label: Description }
@@ -20,23 +19,4 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
-        default: ["coding"]
-
-  - name: stuff
-    label: Stuff
-    folder: content/stuff
-    create: true
-    fields:
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: link, label: Link }
-
-  - name: things
-    label: Things
-    folder: content/things
-    create: true
-    fields:
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: link, label: Link }
+        default: ["shareholders"]

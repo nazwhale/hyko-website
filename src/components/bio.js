@@ -34,12 +34,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong>. But who <em>is</em> he? You
-              could{" "}
+              Compiled by <strong>{author}</strong> <br />
               <a href={`https://twitter.com/${social.twitter}`}>
-                follow him on Twitter
+                Follow him on Twitter
               </a>
-              , perhaps that'll give you a clue or two.
             </p>
           </Container>
         )

@@ -4,12 +4,12 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const postTemplate = path.resolve(`./src/templates/blog-post.js`)
   return graphql(
     `
       {
         allMdx(
-          filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+          filter: { fileAbsolutePath: { regex: "/content/posts/" } }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
@@ -32,7 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create blog posts pages
+    // Create post pages
     const posts = result.data.allMdx.edges
 
     posts.forEach((post, index) => {
@@ -40,8 +40,8 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : posts[index - 1].node
 
       createPage({
-        path: `blog${post.node.fields.slug}`,
-        component: blogPost,
+        path: `posts${post.node.fields.slug}`,
+        component: postTemplate,
         context: {
           slug: post.node.fields.slug,
           previous,

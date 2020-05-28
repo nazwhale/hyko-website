@@ -1,35 +1,84 @@
 import React from "react"
 import { Link } from "gatsby"
-import scotland from "../../content/assets/scotland.jpg"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Who is Naz?"
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMdx.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`ceo`, `letter`, `founder`, `message`, `company`]}
         />
-        <img style={{ margin: 0 }} src={scotland} alt="Potentially Naz" />
-        <h1>Hey people</h1>
-        <p>I'm Naz, welcome to my site.</p>
-        <p>
-          Inside you'll find some things that fell out of my brain at one time
-          or another. I hope you like them.
-        </p>
-        <p>
-          How about some <Link to="/blog/">words</Link>. Or you could check out
-          a few <Link to="/things/">things</Link>. If you're really bored,
-          there's this place full of <Link to="/stuff/">stuff</Link>.
-        </p>
+        <p>How CEOs communicate to their employees and shareholders</p>
+        <div style={{ margin: "20px 0 40px" }}>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <div key={node.fields.slug}>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
+                >
+                  <Link
+                    style={{ boxShadow: `none` }}
+                    to={`posts${node.fields.slug}`}
+                  >
+                    {title}
+                  </Link>
+                </h3>
+                <small>
+                  {`${node.frontmatter.date} • ${node.timeToRead} min read`}
+                </small>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </div>
+            )
+          })}
+        </div>
       </Layout>
     )
   }
 }
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query BlogQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "/content/posts/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+          timeToRead
+        }
+      }
+    }
+  }
+`

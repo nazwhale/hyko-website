@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Who is Naz?`,
+    title: `From the CEO`,
     author: `Naz`,
-    description: `Who is Naz?`,
-    siteUrl: `https://www.whoisnaz.com/`,
+    description: `From the CEO`,
+    siteUrl: `https://www.ceocomms.com/`,
     social: {
       twitter: `nazwhale`,
     },
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/posts`,
+        name: `posts`,
       },
     },
     {
@@ -84,8 +84,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Who is Naz?`,
-        short_name: `whoisnaz`,
+        name: `From the CEO`,
+        short_name: `From the CEO`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
