@@ -3,7 +3,7 @@ date: 2020-04-15T13:41:52.764Z
 title: Sundar Pichai - Google
 description: Slowing hiring in the wake of coronavirus
 tags:
-  - amazon
+  - google
 ---
 Hi everyone,
 
