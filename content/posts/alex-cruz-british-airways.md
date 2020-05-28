@@ -1,5 +1,5 @@
 ---
-date: 2020-05-28T13:41:52.764Z
+date: 2020-04-28T13:41:52.764Z
 title: Alex Cruz - British Airways
 description: >-
   Signalling redundancies and consultancies to weather the lack of revenue
