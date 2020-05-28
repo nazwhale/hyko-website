@@ -1,8 +1,7 @@
 ---
 date: 2020-05-21T10:43:49.610Z
 title: Jeff Bezos - Amazon
-description: A message from our CEO and founder
-featured_image_url: '"sdfs"'
+description: Uncertainty in the time of coronavirus
 tags:
   - amazon
 ---
