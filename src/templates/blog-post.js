@@ -19,7 +19,6 @@ class PostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
-          featured_image_url={post.frontmatter.featured_image_url}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -100,7 +99,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
-        featured_image_url
       }
       timeToRead
     }
