@@ -1,7 +1,7 @@
 ---
 date: 2020-05-05T13:34:46.993Z
 title: Brian Chesky - Airbnb
-description: A Message from Co-Founder and CEO
+description: Laying off 25% of employees
 tags:
   - airbnb
 ---
