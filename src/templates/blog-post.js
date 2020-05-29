@@ -1,12 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import styled from "styled-components"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
 import { rhythm, scale } from "../utils/typography"
+
+const TagContainer = styled.div`
+  display: flex;
+`
 
 class PostTemplate extends React.Component {
   render() {
@@ -34,15 +39,17 @@ class PostTemplate extends React.Component {
 
         <MDXRenderer>{post.body}</MDXRenderer>
 
-        {post.frontmatter.tags.map(tag => {
-          return (
-            <div key={tag}>
-              <Link style={{ boxShadow: `none` }} to={`/tags/${tag}`}>
-                <Tag marginBottom="1.75rem">{tag}</Tag>
-              </Link>
-            </div>
-          )
-        })}
+        <TagContainer>
+          {post.frontmatter.tags.map(tag => {
+            return (
+              <div key={tag} style={{ marginRight: "0.5rem" }}>
+                <Link style={{ boxShadow: `none` }} to={`/tags/${tag}`}>
+                  <Tag marginBottom="1.75rem">{tag}</Tag>
+                </Link>
+              </div>
+            )
+          })}
+        </TagContainer>
 
         <hr
           style={{
