@@ -11,6 +11,7 @@ const TagWrapper = styled.button`
   text-decoration: none;
   padding: 6px 18px;
   cursor: pointer;
+  text-transform: capitalize;
 
   background: ${props => props.props.background || "rgba(0, 0, 0, 0.05)"};
   color: ${props => props.props.color || "rgba(0, 0, 0, 0.54)"};

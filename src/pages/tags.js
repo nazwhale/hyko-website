@@ -19,7 +19,7 @@ class Tags extends React.Component {
             {group.map(tag => (
               <li key={tag.fieldValue}>
                 <Link
-                  style={{ boxShadow: `none` }}
+                  style={{ boxShadow: `none`, textTransform: "capitalize" }}
                   to={`/tags/${tag.fieldValue}/`}
                 >
                   {tag.fieldValue} ({tag.totalCount})
