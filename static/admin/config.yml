@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: nazwhale/from-the-ceo
+  repo: nazwhale/hyko-website
 
 media_folder: static/assets
 public_folder: assets
@@ -18,4 +18,4 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
-        default: ["amazon"]
+        default: ["engineering"]

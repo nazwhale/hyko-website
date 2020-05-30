@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `From the CEO`,
+    title: `Hyko Payroll`,
     author: `Naz`,
-    description: `From the CEO`,
-    siteUrl: `https://www.ceocomms.com/`,
+    description: `Hyko Payroll`,
+    siteUrl: `https://www.hyko.uk/`,
     social: {
       twitter: `nazwhale`,
     },
@@ -70,14 +70,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `From the CEO`,
-        short_name: `From the CEO`,
+        name: `Hyko Payroll`,
+        short_name: `Hyko Payroll`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         // edit below
-        icon: `content/assets/bean.png`,
+        icon: `content/assets/husky.png`,
       },
     },
     {

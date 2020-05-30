@@ -15,9 +15,9 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`ceo`, `letter`, `founder`, `message`, `company`]}
+          keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
         />
-        <p>How CEOs communicate to their employees and shareholders</p>
+        <p>It's 2020. Time to get smart about your payroll.</p>
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
