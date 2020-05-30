@@ -72,6 +72,7 @@ class Layout extends React.Component {
             <header>{header}</header>
             <main>{children}</main>
           </div>
+          <Triangle />
           <FooterContainer>
             <Footer>© {new Date().getFullYear()}</Footer>
           </FooterContainer>
@@ -81,12 +82,22 @@ class Layout extends React.Component {
   }
 }
 
+const Triangle = styled.div`
+  height: 0;
+  width: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 4rem solid #1bc47d;
+  overflow: hidden;
+`
+
 const FooterContainer = styled.div`
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #1bc47d;
   height: 20vh;
+  overflow: hidden;
 `
 
 const Wrapper = styled.div`
