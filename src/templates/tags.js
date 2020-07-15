@@ -34,7 +34,7 @@ class TagRoute extends React.Component {
                       >
                         <Link
                           style={{ boxShadow: `none` }}
-                          to={`/posts${node.fields.slug}`}
+                          to={`/blog${node.fields.slug}`}
                         >
                           {node.frontmatter.title}
                         </Link>

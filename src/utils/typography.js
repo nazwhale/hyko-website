@@ -11,6 +11,10 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     h1: {
       fontFamily: "Palanquin, sans-serif",
+      marginTop: "1rem",
+    },
+    h2: {
+      fontFamily: "Palanquin, sans-serif",
     },
     h3: {
       fontFamily: "Palanquin, sans-serif",

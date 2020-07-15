@@ -18,6 +18,7 @@ function Bio() {
       query={bioQuery}
       render={data => {
         const { author, social } = data.site.siteMetadata
+        console.log("👋🏻", data.site.siteMetadata)
         return (
           <Container>
             <Image
@@ -34,8 +35,13 @@ function Bio() {
               }}
             />
             <p>
-              Compiled by <strong>{author}</strong> <br />
-              <a href={`https://twitter.com/${social.twitter}`}>
+              Written by <strong>{author}</strong>
+              <br />
+              <a
+                href={`https://twitter.com/${social.twitter}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Follow him on Twitter
               </a>
             </p>

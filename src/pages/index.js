@@ -17,8 +17,13 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
         />
-        <p>It's 2020. Time to get smart about your payroll.</p>
         <div style={{ margin: "20px 0 40px" }}>
+          <h1 style={{ marginTop: "1rem" }}>
+            <span role="img" aria-label="blog">
+              📖
+            </span>{" "}
+            Blog
+          </h1>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
@@ -30,7 +35,7 @@ class IndexPage extends React.Component {
                 >
                   <Link
                     style={{ boxShadow: `none` }}
-                    to={`posts${node.fields.slug}`}
+                    to={`blog${node.fields.slug}`}
                   >
                     {title}
                   </Link>

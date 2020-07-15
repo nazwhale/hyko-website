@@ -2,11 +2,18 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import husky from "../../content/assets/husky.png"
+import Footer from "./footer"
 
 import { rhythm, scale } from "../utils/typography"
 
 const HuskyIcon = styled.img`
   height: 4rem;
+`
+const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 class Layout extends React.Component {
@@ -17,25 +24,29 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1),
-            marginBottom: rhythm(1.5),
-            fontFamily: `Palanquin, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
+        <>
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              ...scale(1),
+              fontFamily: `Palanquin, sans-serif`,
+              marginTop: 0,
             }}
-            to="/"
           >
-            {title}
-          </Link>
-        </h1>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to="/"
+            >
+              {title}
+            </Link>
+          </h1>
+          <p style={{ textAlign: "center", fontWeight: "bolder" }}>
+            Payroll APIs you can rely on
+          </p>
+        </>
       )
     } else {
       header = (
@@ -69,45 +80,21 @@ class Layout extends React.Component {
               padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             }}
           >
-            <HuskyIcon src={husky} />
-            <header>{header}</header>
+            <HeaderContainer>
+              <HuskyIcon src={husky} />
+              <header>{header}</header>
+            </HeaderContainer>
             <main>{children}</main>
           </div>
-          <Triangle />
-          <FooterContainer>
-            <Footer>© {new Date().getFullYear()}</Footer>
-          </FooterContainer>
+          <Footer />
         </Wrapper>
       </>
     )
   }
 }
 
-const Triangle = styled.div`
-  height: 0;
-  width: 0;
-  border-left: 100vw solid transparent;
-  border-bottom: 4rem solid #1bc47d;
-  overflow: hidden;
-`
-
-const FooterContainer = styled.div`
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #1bc47d;
-  height: 20vh;
-  overflow: hidden;
-`
-
 const Wrapper = styled.div`
   min-height: 100vh;
-`
-
-const Footer = styled.footer`
-  text-align: center;
-  margin: 24px;
 `
 
 export default Layout
