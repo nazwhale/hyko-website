@@ -1,6 +1,6 @@
 ---
 date: 2020-07-15T14:25:01.990Z
-title: Launch
+title: First steps
 description: Let's go!
 tags:
   - updates
