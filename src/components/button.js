@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { theme } from "../theme/theme"
 
 const Button = props => (
   <ButtonWrapper props={props}>{props.children}</ButtonWrapper>
@@ -13,15 +14,14 @@ const ButtonWrapper = styled.button`
   text-decoration: none;
   padding: 10px 25px;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
 
-  background: ${props => props.props.background || "black"};
-  color: ${props => props.props.color || "rgb(255, 255, 255)"};
+  background: ${props => props.props.background || theme.color.darkBlue};
+  color: ${props => props.props.color || theme.color.lightGrey};
   font-size: ${props => props.props.fontSize || "15px"};
-  font-weight: ${props => props.props.fontWeight || "600"};
+  font-weight: ${props => props.props.fontWeight || "500"};
   border-radius: ${props => props.props.radius || "6px"};
-  margin-top: ${props => props.props.marginTop};
+  margin-top: ${props => props.props.marginTop || "1rem"};
   margin-bottom: ${props => props.props.marginBottom};
 
   &:hover {

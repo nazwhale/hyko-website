@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+
+import { theme } from "../theme/theme"
 import husky from "../../content/assets/hyko-logo.svg"
 import Footer from "./footer"
+import Button from "./button"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -14,6 +17,37 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`
+
+const Subheader = styled.h2`
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0;
+`
+
+const SkewBoxContainer = styled.div`
+  position: relative;
+  padding: ${rhythm(1.5)} 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+`
+
+const SkewBox = styled.div`
+  position: absolute;
+  z-index: -1;
+
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+
+  background-color: ${theme.color.green};
+  -webkit-transform: skew(0deg, -2deg);
+  -ms-transform: skew(0deg, -2deg);
+  transform: skew(0deg, -2deg);
 `
 
 class Layout extends React.Component {
@@ -43,9 +77,7 @@ class Layout extends React.Component {
               {title}
             </Link>
           </h1>
-          <p style={{ textAlign: "center", fontWeight: "bolder" }}>
-            Payroll APIs you can rely on
-          </p>
+          <Subheader>Payroll APIs you can rely on</Subheader>
         </>
       )
     } else {
@@ -86,6 +118,26 @@ class Layout extends React.Component {
             </HeaderContainer>
             <main>{children}</main>
           </div>
+
+          {location.pathname === rootPath && (
+            <SkewBoxContainer>
+              <SkewBox />
+              <ContentContainer>
+                <ContentHeaderSmall>Designed for developers</ContentHeaderSmall>
+                <ContentHeaderLarge>
+                  Powerful payroll APIs you can trust
+                </ContentHeaderLarge>
+                <Content>
+                  We agonize over reliability, security, and keeping payroll
+                  compliant so you don't have to.
+                </Content>
+                <a href="http://docs.hyko.uk">
+                  <Button>Read the docs</Button>
+                </a>
+              </ContentContainer>
+            </SkewBoxContainer>
+          )}
+
           <Footer />
         </Wrapper>
       </>
@@ -95,6 +147,28 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
+`
+
+const ContentContainer = styled.div`
+  max-width: 42em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+`
+
+const ContentHeaderSmall = styled.h4`
+  margin-top: 1em;
+  color: ${theme.color.darkBlue};
+`
+
+const ContentHeaderLarge = styled.h3`
+  font-weight: 600;
+  margin-top: 0.5em;
+`
+
+const Content = styled.p`
+  margin-top: 0.5em;
+  color: ${theme.color.darkBlue};
 `
 
 export default Layout

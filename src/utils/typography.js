@@ -1,5 +1,6 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
+import { theme } from "../theme/theme"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
@@ -18,6 +19,14 @@ Wordpress2016.overrideThemeStyles = () => {
     },
     h3: {
       fontFamily: "Palanquin, sans-serif",
+    },
+    h4: {
+      fontFamily: "Palanquin, sans-serif",
+      textTransform: "initial",
+      letterSpacing: "0.07em",
+    },
+    a: {
+      color: theme.color.link,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,

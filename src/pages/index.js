@@ -18,18 +18,19 @@ class IndexPage extends React.Component {
           keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
         />
         <div style={{ margin: "20px 0 40px" }}>
-          <h1 style={{ marginTop: "1rem" }}>
+          <h2 style={{ marginTop: "1rem" }}>
             <span role="img" aria-label="blog">
               📖
             </span>{" "}
             Blog
-          </h1>
+          </h2>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <div key={node.fields.slug}>
                 <h3
                   style={{
+                    marginTop: "1em",
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
