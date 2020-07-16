@@ -1,0 +1,15 @@
+<svg width="126" height="158" viewBox="0 0 126 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M118.963 85.5005C109.57 61.0773 88.0482 44 63 44C37.9518 44 16.4297 61.0774 7.03699 85.5006C8.11804 56.3273 32.7598 33 63 33C93.2401 33 117.882 56.3272 118.963 85.5005ZM25.085 127.609L34.8569 134.628C31.3379 132.633 28.0625 130.276 25.085 127.609Z" fill="black"/>
+<line x1="1" y1="-1" x2="12.6015" y2="-1" transform="matrix(-0.955779 0.294086 0.294086 0.955779 95 89)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="93.7501" y1="95.6617" x2="82.6617" y2="92.2499" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="31.2499" y1="88.3383" x2="42.3383" y2="91.7501" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1" y1="-1" x2="12.6015" y2="-1" transform="matrix(0.955779 -0.294086 -0.294086 -0.955779 30 95)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M122.308 110.732L61.9808 154.268" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="2.79117" y1="111.542" x2="61.4151" y2="153.652" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62.5 145L70.7272 39.25H54.2728L62.5 145Z" fill="black"/>
+<line x1="3" y1="-3" x2="68.8228" y2="-3" transform="matrix(0.360262 -0.932851 0.921815 0.387629 17 69)" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="3" y1="-3" x2="68.8228" y2="-3" transform="matrix(-0.360262 -0.932851 -0.921815 0.387629 109 69)" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="3" y1="-3" x2="40.1394" y2="-3" transform="matrix(-0.311007 -0.950408 0.94199 -0.33564 54.375 41)" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="3" y1="-3" x2="40.1394" y2="-3" transform="matrix(0.311007 -0.950408 -0.94199 -0.33564 71.625 41)" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62.4711 153.795L73.8476 145.623C72.9514 140.164 68.212 136 62.5001 136C56.7751 136 52.0272 140.183 51.1465 145.66L62.4711 153.795Z" fill="black"/>
+</svg>

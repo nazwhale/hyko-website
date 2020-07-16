@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import husky from "../../content/assets/husky.png"
+import husky from "../../content/assets/hyko-logo.svg"
 import Footer from "./footer"
 
 import { rhythm, scale } from "../utils/typography"
