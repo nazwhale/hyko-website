@@ -5,8 +5,6 @@ description: How we auto-generate API docs with Swagger
 tags:
   - engineering
 ---
-# Swagger with Go walkthrough
-
 ## Why Swagger?
 
 Here at Hyko, we want to make our API docs great. 
