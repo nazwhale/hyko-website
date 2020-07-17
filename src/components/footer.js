@@ -57,7 +57,15 @@ function Footer() {
         <FinalSkewBox />
         <Content>
           <HuskyIcon src={husky} />
-          <span style={{ fontSize: "24px", paddingRight: "1em" }}>Hyko</span>
+          <span
+            style={{
+              fontSize: "24px",
+              paddingRight: "1em",
+              letterSpacing: "0.05em",
+            }}
+          >
+            Hyko
+          </span>
           <span style={{ fontSize: "14px" }}>
             © Hyko.uk {new Date().getFullYear()}
           </span>
