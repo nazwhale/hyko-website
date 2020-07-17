@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, keywords, title, featured_image_url }) {
   const metaDescription = description || site.siteMetadata.description
 
   if (featured_image_url === "") {
-    featured_image_url = "https://imgur.com/XS9Skd9"
+    featured_image_url = "https://i.imgur.com/XS9Skd9.png"
   }
 
   return (
