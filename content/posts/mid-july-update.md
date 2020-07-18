@@ -27,9 +27,13 @@ I'm currently looking through a few tools for our docs. Options are:
 
 - [Slate](https://github.com/slatedocs/slate), which looks neat and uses markdown files. It's free and [Monzo use it](https://docs.monzo.com/).
 - [GitBook](https://www.gitbook.com/), which is more like a knowledge management platform. It looks super slick but it's a bit pricy. I'm planning to chat to them to see if we can get it cheap / free if we're only using it for one user.
-- [Swagger](https://swagger.io/), which auto-generates API docs from your code (big plus), but [looks a bit meh](https://swagger.io/tools/swagger-ui/). There are some tools out there to convert Swagger files to Slate docs, but at this point I think I'd rather focus on other things than faff around with that. But if you're reading this I'd be keen to hear your suggestions! It might also be true that our API won't change that often, so perhaps auto-generation isn't such a big plus after all 🤷‍♂️
+- [Swagger](https://swagger.io/), which auto-generates API docs from your code (big plus), but [looks a bit meh](https://swagger.io/tools/swagger-ui/). There are some tools out there to convert Swagger files to Slate docs, but at this point I think I'd rather focus on other things than faff around with that. But if you're reading this and have an idea about how this can be done reliably I'd be keen to hear your suggestions!
 
-After having a play around with Swagger and being a little dissapointed by the output, I'm thinking about throwing up something on Slate for now while I'm waiting for GitBook to get back to me. 
+After having a play around with Swagger and being a little dissapointed by the output, I decided to throw up something on Slate for now while I'm waiting for GitBook to get back to me. 
+
+You can check out our API docs [here](https://docs.hyko.uk/#introduction) 👀
+
+![Hyko API docs](https://i.imgur.com/W0QIczG.png)
 
 If you want to have a go at auto-generating API docs with Swagger from Go code, I wrote a little how-to [here](https://hyko.uk/blog/swagger-with-go-walkthrough/).
 
