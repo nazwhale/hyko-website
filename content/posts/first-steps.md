@@ -3,7 +3,7 @@ date: 2020-07-15T14:36:19.557Z
 title: First steps
 description: In which Charlie and Naz start building a payroll provider
 tags:
-  - engineering
+  - updates
 ---
 Hello. 
 
