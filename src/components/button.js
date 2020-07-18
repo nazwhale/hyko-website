@@ -24,6 +24,9 @@ const ButtonWrapper = styled.button`
   margin-top: ${props => props.props.marginTop || "1rem"};
   margin-bottom: ${props => props.props.marginBottom};
 
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
   &:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
   }
