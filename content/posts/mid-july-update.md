@@ -33,6 +33,17 @@ After having a play around with Swagger and being a little dissapointed by the o
 
 If you want to have a go at auto-generating API docs with Swagger from Go code, I wrote a little how-to [here](https://hyko.uk/blog/swagger-with-go-walkthrough/).
 
+## API design
+
+Our API should comply with the [SCIM](http://www.simplecloud.info/) specification to make it easier for our clients to work with. 
+
+It's essentailly a standard for managing user identities to make integrations a little less painful.
+
+Charlie's been heroically reading through some of [the](https://tools.ietf.org/html/rfc7643) [SCIM](https://tools.ietf.org/html/rfc7644) [RFCs](https://tools.ietf.org/html/rfc7642) so we can make sure our API is on point.
+
+We've also been reading up on [OAuth 2.0](https://oauth.net/2/), which we plan to use for authorization.
+
+
 ## Security
 
 We've been thinking more and more about security. If we intend on holding data on employees, we need to seriously assess the risks of that data being compromised and implement appropriate controls.
