@@ -11,7 +11,7 @@ import { rhythm, scale } from "../utils/typography"
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  padding: ${rhythm(3 / 4)} ${rhythm(3 / 4)};
   padding-bottom: 0;
 `
 
