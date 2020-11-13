@@ -11,6 +11,10 @@ const HeroTextContainer = styled.div`
 
 const HeroText = styled.h1`
   font-size: 72px;
+
+  @media (max-width: 768px) {
+    font-size: 42px;
+  }
 `
 
 const HeroSubtitle = styled.p`
