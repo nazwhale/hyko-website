@@ -4,6 +4,7 @@ export const theme = {
     darkBlue: "#1B2244",
     black: "#1F1D1F",
     lightGrey: "#EEEEEE",
+    darkGrey: "grey",
     link: "#596FDE",
   },
 }

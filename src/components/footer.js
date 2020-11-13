@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import { theme } from "../theme/theme"
 import husky from "../../content/assets/hyko-logo-grey.svg"
@@ -24,6 +25,10 @@ const FooterContainer = styled.div`
   box-sizing: border-box;
   padding-top: 94px;
   padding-bottom: 94px;
+`
+
+const Items = styled.div`
+  margin-bottom: 1rem;
 `
 
 const FinalSkewBox = styled.div`
@@ -56,6 +61,37 @@ function Footer() {
       <FooterContainer>
         <FinalSkewBox />
         <Content>
+          <Items>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: "none",
+                color: "inherit",
+                fontSize: "14px",
+                paddingRight: "1rem",
+              }}
+              to={`blog`}
+            >
+              Blog
+            </Link>
+
+            <span style={{ fontSize: "14px" }}>
+              <a
+                href="http://docs.hyko.uk"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  boxShadow: "none",
+                  paddingRight: "1rem",
+                }}
+              >
+                API documentation
+              </a>
+            </span>
+          </Items>
+
+          <hr style={{ backgroundColor: theme.color.darkGrey }} />
+
           <HuskyIcon src={husky} />
           <span
             style={{
