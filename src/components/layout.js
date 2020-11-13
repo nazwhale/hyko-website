@@ -3,26 +3,24 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { theme } from "../theme/theme"
-import husky from "../../content/assets/hyko-logo.svg"
 import Footer from "./footer"
 import Button from "./button"
 
 import { rhythm, scale } from "../utils/typography"
 
-const HuskyIcon = styled.img`
-  height: 4rem;
-`
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+  padding-bottom: 0;
+`
+
+const HeaderOptions = styled.div`
+  display: flex;
   align-items: center;
 `
 
-const Subheader = styled.h2`
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
+const HeaderOption = styled.h3`
   margin-top: 0;
 `
 
@@ -77,7 +75,13 @@ class Layout extends React.Component {
               {title}
             </Link>
           </h1>
-          <Subheader>Payroll APIs you can rely on</Subheader>
+          <HeaderOptions>
+            <HeaderOption>
+              <Link style={{ boxShadow: `none`, color: "inherit" }} to="/blog">
+                Blog
+              </Link>
+            </HeaderOption>
+          </HeaderOptions>
         </>
       )
     } else {
@@ -104,6 +108,8 @@ class Layout extends React.Component {
     return (
       <>
         <Wrapper>
+          <HeaderContainer>{header}</HeaderContainer>
+
           <div
             style={{
               marginLeft: `auto`,
@@ -112,10 +118,6 @@ class Layout extends React.Component {
               padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             }}
           >
-            <HeaderContainer>
-              <HuskyIcon src={husky} />
-              <header>{header}</header>
-            </HeaderContainer>
             <main>{children}</main>
           </div>
 
