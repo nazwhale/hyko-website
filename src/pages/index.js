@@ -1,15 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+
+const HeroTextContainer = styled.div`
+  margin-bottom: 8rem;
+  text-align: center;
+`
+
+const HeroText = styled.h1`
+  font-size: 72px;
+`
+
+const HeroSubtitle = styled.p`
+  font-size: 20px;
+  font-weight: 100;
+`
 
 class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMdx.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -17,42 +29,12 @@ class IndexPage extends React.Component {
           title="Home"
           keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
         />
-        <div style={{ margin: "20px 0 40px" }}>
-          <h2 style={{ marginTop: "1rem" }}>
-            <span role="img" aria-label="blog">
-              📖
-            </span>{" "}
-            Blog
-          </h2>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <div key={node.fields.slug}>
-                <h3
-                  style={{
-                    marginTop: "1em",
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link
-                    style={{ boxShadow: `none` }}
-                    to={`blog${node.fields.slug}`}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small>
-                  {`${node.frontmatter.date} • ${node.timeToRead} min read`}
-                </small>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </div>
-            )
-          })}
-        </div>
+        <HeroTextContainer>
+          <HeroText>Payroll software you can rely on</HeroText>
+          <HeroSubtitle>
+            Say goodbye to spreadsheet uploads and stressful payroll runs.
+          </HeroSubtitle>
+        </HeroTextContainer>
       </Layout>
     )
   }
@@ -61,29 +43,10 @@ class IndexPage extends React.Component {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query BlogQuery {
+  query IndexQuery {
     site {
       siteMetadata {
         title
-      }
-    }
-    allMdx(
-      filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-          timeToRead
-        }
       }
     }
   }
