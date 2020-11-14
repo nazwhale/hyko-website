@@ -6,7 +6,7 @@ import { theme } from "../theme/theme"
 import Footer from "./footer"
 import Button from "./button"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 const HeaderContainer = styled.header`
   display: flex;
@@ -59,7 +59,7 @@ class Layout extends React.Component {
         <>
           <h1
             style={{
-              ...scale(1),
+              fontSize: "2rem",
               fontFamily: `Palanquin, sans-serif`,
               marginTop: 0,
             }}
