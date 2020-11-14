@@ -14,7 +14,7 @@ class BlogPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="404: Not Found" />
+        <SEO title="Blog" />
         <h1 style={{ marginTop: 0, marginBottom: "3rem" }}>
           <span role="img" aria-label="blog">
             📖{" "}
