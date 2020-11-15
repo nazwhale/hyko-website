@@ -1,25 +1,45 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
 
+import { theme } from "../theme/theme"
 import Layout from "../components/layout"
+import Button from "../components/button"
 import SEO from "../components/seo"
 
 const HeroTextContainer = styled.div`
-  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
   text-align: center;
 `
 
 const HeroText = styled.h1`
-  font-size: 72px;
+  font-size: 68px;
 
   @media (max-width: 768px) {
-    font-size: 42px;
+    font-size: 38px;
   }
 `
 
 const HeroSubtitle = styled.p`
-  font-size: 20px;
-  font-weight: 100;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+`
+
+const ButtonExplainer = styled.p`
+  font-size: 18px;
+  font-weight: 200;
+  color: ${theme.color.darkGrey};
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `
 
 class IndexPage extends React.Component {
@@ -34,10 +54,21 @@ class IndexPage extends React.Component {
           keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
         />
         <HeroTextContainer>
-          <HeroText>Payroll software you can rely on</HeroText>
-          <HeroSubtitle>
-            Say goodbye to spreadsheet uploads and stressful payroll runs.
-          </HeroSubtitle>
+          <HeroText>
+            I'm tired of... <br />
+            manual spreadsheet uploads
+          </HeroText>
+          <HeroSubtitle>Help us build your ideal payroll provider</HeroSubtitle>
+          <a
+            href="https://forms.gle/rmymUndxVvng4cjj9"
+            style={{ boxShadow: "none" }}
+          >
+            <Button marginBottom="1rem">Tell us what's fraustrating you</Button>
+          </a>
+          <ButtonExplainer>
+            Do you run payroll? We'd love to hear from you!
+            <br />A few short answers will help us learn a lot.
+          </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
     )

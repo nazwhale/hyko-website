@@ -70,7 +70,7 @@ function Footer() {
                 fontSize: "14px",
                 paddingRight: "1rem",
               }}
-              to={`blog`}
+              to={`/blog`}
             >
               Blog
             </Link>

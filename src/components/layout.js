@@ -77,7 +77,10 @@ class Layout extends React.Component {
           </h1>
           <HeaderOptions>
             <HeaderOption>
-              <Link style={{ boxShadow: `none`, color: "inherit" }} to="/blog">
+              <Link
+                style={{ boxShadow: `none`, color: "inherit" }}
+                to={`/blog`}
+              >
                 Blog
               </Link>
             </HeaderOption>

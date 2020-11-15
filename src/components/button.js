@@ -12,9 +12,9 @@ const ButtonWrapper = styled.button`
   text-align: center;
   box-sizing: border-box;
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 0.5rem 1.5rem;
   cursor: pointer;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.05em;
 
   background: ${props => props.props.background || theme.color.darkBlue};
   color: ${props => props.props.color || theme.color.lightGrey};
