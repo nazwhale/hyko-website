@@ -11,8 +11,13 @@ import { rhythm } from "../utils/typography"
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: ${rhythm(3 / 4)} ${rhythm(3 / 4)};
+  padding: 1.5rem 5rem;
   padding-bottom: 0;
+
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+    padding-bottom: 0;
+  }
 `
 
 const HeaderOptions = styled.div`
