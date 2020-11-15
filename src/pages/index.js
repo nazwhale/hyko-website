@@ -63,7 +63,7 @@ class IndexPage extends React.Component {
             href="https://forms.gle/rmymUndxVvng4cjj9"
             style={{ boxShadow: "none" }}
           >
-            <Button marginBottom="1rem">Tell us what's fraustrating you</Button>
+            <Button marginBottom="1rem">Tell us what's frustrating you</Button>
           </a>
           <ButtonExplainer>
             Do you run payroll? We'd love to hear from you!
