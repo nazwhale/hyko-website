@@ -68,12 +68,12 @@ class IndexPage extends React.Component {
             href="https://forms.gle/rmymUndxVvng4cjj9"
             style={{ boxShadow: "none" }}
           >
-            <Button marginBottom="1rem">Apply for access</Button>
+            <Button marginBottom="1rem">Apply for early access</Button>
           </a>
           <ButtonExplainer>
-            Apply for access for a spot on the waiting list.
+            Apply for your spot on the waiting list.
             <br />
-            We'll be in touch.
+            Be one of the first to use Hyko at discounted rates.
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
