@@ -37,6 +37,8 @@ const ButtonExplainer = styled.p`
   font-size: 18px;
   font-weight: 200;
   color: ${theme.color.darkGrey};
+  margin-top: 1rem;
+  margin-bottom: 0;
   @media (max-width: 768px) {
     font-size: 14px;
   }
@@ -58,16 +60,20 @@ class IndexPage extends React.Component {
             I'm tired of... <br />
             manual spreadsheet uploads
           </HeroText>
-          <HeroSubtitle>Help us build your ideal payroll provider</HeroSubtitle>
+          <HeroSubtitle>
+            Hyko is modern payroll software that runs itself
+            <br /> (correctly, every time)
+          </HeroSubtitle>
           <a
             href="https://forms.gle/rmymUndxVvng4cjj9"
             style={{ boxShadow: "none" }}
           >
-            <Button marginBottom="1rem">Tell us what's frustrating you</Button>
+            <Button marginBottom="1rem">Apply for access</Button>
           </a>
           <ButtonExplainer>
-            Do you run payroll? We'd love to hear from you!
-            <br />A few short answers will help us learn a lot.
+            Apply for access for a spot on the waiting list.
+            <br />
+            We'll be in touch.
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
