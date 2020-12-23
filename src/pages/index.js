@@ -61,8 +61,8 @@ class IndexPage extends React.Component {
             manual spreadsheet uploads
           </HeroText>
           <HeroSubtitle>
-            Hyko is modern payroll software that runs itself
-            <br /> (correctly, every time)
+            Hyko is a modern way to pay your employees
+            <br /> (with minimal faff)
           </HeroSubtitle>
           <a
             href="https://forms.gle/rmymUndxVvng4cjj9"
