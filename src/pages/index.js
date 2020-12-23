@@ -52,7 +52,7 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Home"
+          title="The Modern Payroll Platform"
           keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
         />
         <HeroTextContainer>
