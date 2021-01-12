@@ -68,7 +68,15 @@ class IndexPage extends React.Component {
             href="https://forms.gle/rmymUndxVvng4cjj9"
             style={{ boxShadow: "none" }}
           >
-            <Button marginBottom="1rem">Apply for early access</Button>
+            <Button
+              isBig={true}
+              fontSize="1.2rem"
+              marginBottom="1rem"
+              height="4rem"
+              paddingHorizontal="40px"
+            >
+              Apply for early access
+            </Button>
           </a>
           <ButtonExplainer>
             Apply for your spot on the waiting list.
