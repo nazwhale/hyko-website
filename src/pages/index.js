@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
       // string - required - The object that was interacted with (e.g.video)
       category: `apply button`,
       // string - required - Type of interaction (e.g. 'play')
-      action: `click`,
+      action: `enter_survey`,
       // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
       label: `Apply for early access`,
     })
