@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 import { theme } from "../theme/theme"
 import Layout from "../components/layout"
@@ -45,6 +46,17 @@ const ButtonExplainer = styled.p`
 `
 
 class IndexPage extends React.Component {
+  emitAnalyticsEvent = () => {
+    trackCustomEvent({
+      // string - required - The object that was interacted with (e.g.video)
+      category: `apply button`,
+      // string - required - Type of interaction (e.g. 'play')
+      action: `click`,
+      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+      label: `Apply for early access`,
+    })
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -67,6 +79,7 @@ class IndexPage extends React.Component {
           <a
             href="https://forms.gle/rmymUndxVvng4cjj9"
             style={{ boxShadow: "none" }}
+            onClick={this.emitAnalyticsEvent}
           >
             <Button
               isBig={true}
