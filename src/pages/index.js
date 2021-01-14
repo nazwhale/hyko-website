@@ -16,15 +16,15 @@ const HeroTextContainer = styled.div`
 `
 
 const HeroText = styled.h1`
-  font-size: 68px;
+  font-size: 48px;
 
   @media (max-width: 768px) {
-    font-size: 38px;
+    font-size: 36px;
   }
 `
 
 const HeroSubtitle = styled.p`
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 1rem;
 
@@ -57,12 +57,12 @@ class IndexPage extends React.Component {
         />
         <HeroTextContainer>
           <HeroText>
-            I'm tired of... <br />
-            manual spreadsheet uploads
+            Payroll shouldn’t take hours, <br />
+            it's time to pay your people in minutes
           </HeroText>
           <HeroSubtitle>
-            Hyko is a modern way to pay your employees
-            <br /> (with minimal faff)
+            Hyko is modern, integrated, and automated. <br /> Perfect for your
+            startup.
           </HeroSubtitle>
           <a
             href="https://forms.gle/rmymUndxVvng4cjj9"
