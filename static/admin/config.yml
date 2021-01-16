@@ -6,6 +6,16 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
+  - name: legal
+    label: Legal
+    folder: content/legal
+    create: true
+    fields:
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
+
   - name: posts
     label: Posts
     folder: content/posts
