@@ -88,6 +88,19 @@ function Footer() {
                 API documentation
               </a>
             </span>
+
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: "none",
+                color: "inherit",
+                fontSize: "14px",
+                paddingRight: "1rem",
+              }}
+              to={`/legal/privacy`}
+            >
+              Privacy policy
+            </Link>
           </Items>
 
           <hr style={{ backgroundColor: theme.color.darkGrey }} />
