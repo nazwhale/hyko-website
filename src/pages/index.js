@@ -69,12 +69,13 @@ class IndexPage extends React.Component {
         />
         <HeroTextContainer>
           <HeroText>
-            Payroll shouldn’t take hours, <br />
-            it's time to pay your people in minutes
+            Payroll, fast
+            <br />
+            It's time to pay your people in minutes
           </HeroText>
           <HeroSubtitle>
-            Hyko is modern, integrated, and automated. <br /> Perfect for your
-            startup.
+            With a Xero integration, auto-RTI submissions, and instant employee
+            updates.
           </HeroSubtitle>
           <a
             href="https://forms.gle/rmymUndxVvng4cjj9"
@@ -92,8 +93,6 @@ class IndexPage extends React.Component {
             </Button>
           </a>
           <ButtonExplainer>
-            Apply for your spot on the waiting list.
-            <br />
             Be one of the first to use Hyko at discounted rates.
           </ButtonExplainer>
         </HeroTextContainer>
