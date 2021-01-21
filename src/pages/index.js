@@ -18,6 +18,7 @@ const HeroTextContainer = styled.div`
 
 const HeroText = styled.h1`
   font-size: 48px;
+  line-height: 1.2;
 
   @media (max-width: 768px) {
     font-size: 36px;
