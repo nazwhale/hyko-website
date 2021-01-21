@@ -75,8 +75,8 @@ class IndexPage extends React.Component {
             It's time to pay your people in minutes
           </HeroText>
           <HeroSubtitle>
-            With a Xero integration, auto-RTI submissions, and instant employee
-            updates.
+            With a Xero integration, instant employee updates, and easy
+            onboarding.
           </HeroSubtitle>
           <a
             href="https://forms.gle/rmymUndxVvng4cjj9"
