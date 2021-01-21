@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
             <br />
           </HeroText>
           <HeroSubtitle>
-            Get setup in minutes with a Xero integration, instant employee
+            Get set up in minutes with a Xero integration, instant employee
             updates, and automated HMRC submissions.
           </HeroSubtitle>
           <a
