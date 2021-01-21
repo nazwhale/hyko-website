@@ -17,11 +17,11 @@ const HeroTextContainer = styled.div`
 `
 
 const HeroText = styled.h1`
-  font-size: 48px;
+  font-size: 58px;
   line-height: 1.2;
 
   @media (max-width: 768px) {
-    font-size: 36px;
+    font-size: 48px;
   }
 `
 
@@ -70,13 +70,12 @@ class IndexPage extends React.Component {
         />
         <HeroTextContainer>
           <HeroText>
-            Payroll, fast
+            Payroll for the future
             <br />
-            It's time to pay your people in minutes
           </HeroText>
           <HeroSubtitle>
-            With a Xero integration, instant employee updates, and easy
-            onboarding.
+            Get setup in minutes with a Xero integration, instant employee
+            updates, and automated HMRC submissions.
           </HeroSubtitle>
           <a
             href="https://forms.gle/rmymUndxVvng4cjj9"
