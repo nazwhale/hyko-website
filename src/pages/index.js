@@ -17,6 +17,7 @@ const HeroTextContainer = styled.div`
 `
 
 const HeroText = styled.h1`
+  margin-top: 0;
   font-size: 58px;
   line-height: 1.2;
 
@@ -70,7 +71,7 @@ class IndexPage extends React.Component {
         />
         <HeroTextContainer>
           <HeroText>
-            Payroll for the future
+            Payroll that just works
             <br />
           </HeroText>
           <HeroSubtitle>
