@@ -94,7 +94,7 @@ class IndexPage extends React.Component {
             </Button>
           </a>
           <ButtonExplainer>
-            Be one of the first to use Hyko at discounted rates.
+            Now available! Apply to gain access to Hyko at discounted rates.
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
