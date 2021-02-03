@@ -90,7 +90,7 @@ class IndexPage extends React.Component {
               height="4rem"
               paddingHorizontal="40px"
             >
-              Apply for early access
+              Apply for access
             </Button>
           </a>
           <ButtonExplainer>
