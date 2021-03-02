@@ -16,7 +16,7 @@ A couple of months ago we became a UK recognised payroll provider, which means w
 
 That one was around 7 months in the making. Feels good. 
 
-Will get round to slamming an "HMRC recognised" badge on the website at some point.
+Will get round to slamming a "HMRC recognised" badge on the website at some point.
 
 **New tax year 🍾** 
 
@@ -66,4 +66,4 @@ We're going to take a few days off on 15th-17th March. It's been pretty non-stop
 
 We're currently working super closely with our first few customers, getting our product purring before scaling up and exposing our public payroll API.
 
-If you'd like to be our next customer, we'd love to chat. [Drop in a meeting here](https://calendly.com/naz-hyko/30min?back=1&month=2021-03) and we'll see if it's a good fit.
+If you'd like to be our next customer, we'd love to chat. If you're a small business wanting a slicker payroll experience or a founder who wants to offer payroll in their product then you could be a perfect fit. Feel free to [drop in a meeting here](https://calendly.com/naz-hyko/30min?back=1&month=2021-03).
