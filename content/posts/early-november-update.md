@@ -1,6 +1,6 @@
 ---
 date: 2020-11-08T11:09:14.703Z
-title: Early November update
+title: November update
 description: XML wrangling, getting back momentum
 tags:
   - engineering
