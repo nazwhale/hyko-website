@@ -58,6 +58,13 @@ Nest have (finally) granted us access to their test site, which means we can sta
 
 We don't plan to start work on this for now, just because there's things we absolutely have to do sooner (end of year stuff) and features we'll be prioritising over Nest (instant payments). Still, good to have  unblocked. 
 
+**API 🗼**
+
+There's so many things we want to do right now, and high up the list is to expose a public API with best in class documentation. 
+
+We've been battle-testing our core payroll logic with our customers and now have confidence that an API is something we'll be able to offer soon. We'll keep you updated!
+
+
 **Chill pill 🧘**
 
 We're going to take a few days off on 15th-17th March. It's been pretty non-stop since December. We're both fatigued and need some time to recharge 💪 
