@@ -60,7 +60,7 @@ We don't plan to start work on this for now, just because there's things we abso
 
 **API 🗼**
 
-There's so many things we want to do right now, and high up the list is to expose a public API with best in class documentation. 
+There's so many things we want to do right now (improve a bunch of flows in the frontend, clearly position our landing page instead of some software-api hybrid thing), and high up the list is to expose a public API with best in class documentation. 
 
 We've been battle-testing our core payroll logic with our customers and now have confidence that an API is something we'll be able to offer soon. We'll keep you updated!
 
