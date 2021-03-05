@@ -22,7 +22,7 @@ const HeroText = styled.h1`
   line-height: 1.2;
 
   @media (max-width: 768px) {
-    font-size: 48px;
+    font-size: 38px;
   }
 `
 
@@ -71,15 +71,14 @@ class IndexPage extends React.Component {
         />
         <HeroTextContainer>
           <HeroText>
-            Payroll that just works
+            We're building best-in-class payroll software
             <br />
           </HeroText>
           <HeroSubtitle>
-            Get set up in minutes with a Xero integration, instant employee
-            updates, and automated HMRC submissions.
+            And we need feedback from the best possible customers. We're looking for truly modern accountancy and FinOps providers to work closely with.
           </HeroSubtitle>
           <a
-            href="https://forms.gle/rmymUndxVvng4cjj9"
+            href="https://calendly.com/naz-hyko"
             style={{ boxShadow: "none" }}
             onClick={this.emitAnalyticsEvent}
           >
@@ -90,11 +89,11 @@ class IndexPage extends React.Component {
               height="4rem"
               paddingHorizontal="40px"
             >
-              Apply for access
+              That's me!
             </Button>
           </a>
           <ButtonExplainer>
-            Now available! Apply to gain access to Hyko at discounted rates.
+            Click to book a meeting with us.
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>

@@ -130,22 +130,40 @@ class Layout extends React.Component {
           </div>
 
           {location.pathname === rootPath && (
+              <>
             <SkewBoxContainer>
               <SkewBox />
               <ContentContainer>
-                <ContentHeaderSmall>Designed for developers</ContentHeaderSmall>
+                <ContentHeaderSmall>Who we are</ContentHeaderSmall>
                 <ContentHeaderLarge>
-                  Powerful payroll APIs you can trust
+                    We've been building Monzo for the last 3 years
                 </ContentHeaderLarge>
                 <Content>
-                  We agonize over reliability, security, and keeping payroll
-                  compliant so you don't have to.
+                    Having worked in operations, financial crime, and growth, we understand what building a product customers love is all about.
                 </Content>
-                <a href="http://docs.hyko.uk">
-                  <Button>Read the docs</Button>
-                </a>
+                  <Content>
+                      We're at home building software at scale that can't go wrong. Now we're fixing payroll.
+                  </Content>
               </ContentContainer>
+
             </SkewBoxContainer>
+
+              <ContentContainer>
+              <ContentHeaderSmall style={{marginTop: "3rem"}}>The Hyko API</ContentHeaderSmall>
+              <ContentHeaderLarge>
+              Our API is under construction
+              </ContentHeaderLarge>
+              <Content>
+              In the next couple of month's we'll publically expose the API that powers our payroll software. It's going to be trivial to embed payroll in your product.
+              </Content>
+              <Content>
+              If your product would benefit from the Hyko API, let's chat.
+              </Content>
+              <a href="https://calendly.com/naz-hyko">
+              <Button marginTop="2rem" marginBottom="2rem">Book a chat</Button>
+              </a>
+              </ContentContainer>
+            </>
           )}
 
           <Footer />
@@ -177,7 +195,8 @@ const ContentHeaderLarge = styled.h3`
 `
 
 const Content = styled.p`
-  margin-top: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
   color: ${theme.color.darkBlue};
 `
 
