@@ -142,7 +142,7 @@ class Layout extends React.Component {
                     Having worked in operations, financial crime, and growth, we understand what building a product customers love is all about.
                 </Content>
                   <Content>
-                      We're at home building software at scale that can't go wrong. Now we're fixing payroll.
+                    We're at home building software at scale that can't go wrong. Now we're full-time on fixing payroll.
                   </Content>
               </ContentContainer>
 
