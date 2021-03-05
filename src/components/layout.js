@@ -154,7 +154,7 @@ class Layout extends React.Component {
               Our API is under construction
               </ContentHeaderLarge>
               <Content>
-              This summer we'll publically expose the API that powers our payroll software. It's going to be trivial to embed payroll in your product.
+              This summer we'll publicly expose the API that powers our payroll software. It's going to be trivial to embed payroll in your product.
               </Content>
               <Content>
               If your product would benefit from the Hyko API, let's chat.
