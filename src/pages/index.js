@@ -93,7 +93,7 @@ class IndexPage extends React.Component {
             </Button>
           </a>
           <ButtonExplainer>
-            Click to book a meeting with us.
+            Click to book a meeting with us
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
