@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Image from "gatsby-image"
 import { graphql } from "gatsby"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
@@ -70,6 +71,15 @@ class IndexPage extends React.Component {
           keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
         />
         <HeroTextContainer>
+
+          <Image
+            fixed={data.hmrcRecognisedLogo.childImageSharp.fixed}
+            alt="hmrc-recognised-logo"
+            style={{
+              marginBottom: "1.5rem"
+            }}
+          />
+
           <HeroText>
             We're building best-in-class payroll software
             <br />
@@ -105,6 +115,13 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {
+    hmrcRecognisedLogo: file(absolutePath: { regex: "/hmrc-recognised.png/" }) {
+      childImageSharp {
+        fixed(width: 86, height: 29) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     site {
       siteMetadata {
         title
