@@ -103,7 +103,7 @@ class IndexPage extends React.Component {
             </Button>
           </a>
           <ButtonExplainer>
-            Click to book a meeting with us.<br/>Our early partners get 50% off our retail price for life.
+            Click to book a meeting with us.<br/>Our early partners get 50% off the retail price for life.
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
