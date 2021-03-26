@@ -67,13 +67,13 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="The Modern Payroll Platform"
-          keywords={[`payroll`, `tax`, `salary`, `money`, `payroll provider`]}
+          title="Cloud payroll software"
+          keywords={[`payroll`, `software`, `cloud`, `accountant`, `payroll provider`]}
         />
         <HeroTextContainer>
 
           <Image
-            fixed={data.hmrcRecognisedLogo.childImageSharp.fixed}
+            fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
             alt="hmrc-recognised-logo"
             style={{
               marginBottom: "1.5rem"
@@ -115,9 +115,9 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {
-    hmrcRecognisedLogo: file(absolutePath: { regex: "/hmrc-recognised.png/" }) {
+    hmrcXeroNestLogos: file(absolutePath: { regex: "./hmrcxeronest.png/" }) {
       childImageSharp {
-        fixed(width: 86, height: 29) {
+        fixed(width: 271, height: 54) {
           ...GatsbyImageSharpFixed
         }
       }
