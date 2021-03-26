@@ -139,7 +139,7 @@ class Layout extends React.Component {
                     We've been building Monzo Bank for the last 3 years
                 </ContentHeaderLarge>
                 <Content>
-                    Having worked in operations, financial crime, and growth, we understand what building a product that customers love is all about.
+                    Having worked in extensively in operations, financial crime, and growth, we understand what process automation is all about.
                 </Content>
                   <Content>
                     We're at home building software at scale that can't go wrong. Now we're full-time on fixing payroll.
