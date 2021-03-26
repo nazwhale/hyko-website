@@ -85,7 +85,7 @@ class IndexPage extends React.Component {
             <br />
           </HeroText>
           <HeroSubtitle>
-            Hyko lets you manage more clients in less time with end-to-end process automation.<br/>Start making real margins on payroll.
+            Hyko lets you earn from more clients in less time with end-to-end process automation.<br/>Start making real margins on payroll.
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-hyko"
