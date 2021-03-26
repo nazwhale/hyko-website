@@ -81,11 +81,11 @@ class IndexPage extends React.Component {
           />
 
           <HeroText>
-            We're building best-in-class payroll software
+            Cloud payroll software for accountants
             <br />
           </HeroText>
           <HeroSubtitle>
-            And we need feedback from the best possible customers. We're looking for truly modern accountancy and FinOps providers to work closely with.
+            Hyko lets you manage more clients in less time with end-to-end process automation.<br/>Start making real margins on payroll.
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-hyko"
@@ -99,11 +99,11 @@ class IndexPage extends React.Component {
               height="4rem"
               paddingHorizontal="40px"
             >
-              That's me!
+              Become a partner
             </Button>
           </a>
           <ButtonExplainer>
-            Click to book a meeting with us
+            Click to book a meeting with us.<br/>Our early partners get 50% off our retail price for life.
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
