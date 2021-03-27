@@ -85,7 +85,7 @@ class IndexPage extends React.Component {
             <br />
           </HeroText>
           <HeroSubtitle>
-            Hyko lets you earn from more clients in less time with end-to-end process automation.<br/>Start making real margins on payroll.
+            Hyko cuts out the manual work with auto-payroll runs for clients with no changes, auto-email reminders, and Xero & Nest integrations.<br/>Start making real margins on payroll.
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-hyko"
@@ -99,11 +99,12 @@ class IndexPage extends React.Component {
               height="4rem"
               paddingHorizontal="40px"
             >
-              Become a partner
+              Book a demo
             </Button>
           </a>
           <ButtonExplainer>
-            Click to book a meeting with us.<br/>Our early partners get 50% off the retail price for life.
+            Early partners get <span style={{fontWeight:"bold"}}>50% off</span> the retail price <span style={{fontWeight:"bold"}}>for life</span><br/>
+            Based in Edinburgh
           </ButtonExplainer>
         </HeroTextContainer>
       </Layout>
