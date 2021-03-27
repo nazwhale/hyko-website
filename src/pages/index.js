@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
@@ -24,6 +24,15 @@ const HeroText = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 38px;
+  }
+`
+
+const HeroImgContainer = styled.div`
+  margin-top: 2rem;
+  margin-bottom: -27rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: -15rem;
   }
 `
 
@@ -64,17 +73,28 @@ class IndexPage extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
+    // Set up the array of image data and `media` keys.
+    // You can have as many entries as you'd like.
+    console.log(data)
+    const heroSources = [
+      data.mobileImage.childImageSharp.fixed,
+      {
+        ...data.desktopImage.childImageSharp.fixed,
+        media: `(min-width: 768px)`,
+      },
+    ]
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Cloud payroll software"
+          title="Cloud Payroll Software"
           keywords={[`payroll`, `software`, `cloud`, `accountant`, `payroll provider`]}
         />
         <HeroTextContainer>
 
-          <Image
+          <Img
             fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
-            alt="hmrc-recognised-logo"
+            alt="logos"
             style={{
               marginBottom: "1.5rem"
             }}
@@ -106,6 +126,16 @@ class IndexPage extends React.Component {
             Early partners get <span style={{fontWeight:"bold"}}>50% off</span> the retail price <span style={{fontWeight:"bold"}}>for life</span><br/>
             Based in Edinburgh
           </ButtonExplainer>
+
+
+
+          <HeroImgContainer>
+          <Img
+            fixed={heroSources}
+            alt="Hyko's Accountant Portal"
+
+          />
+          </HeroImgContainer>
         </HeroTextContainer>
       </Layout>
     )
@@ -119,6 +149,20 @@ export const pageQuery = graphql`
     hmrcXeroNestLogos: file(absolutePath: { regex: "./hmrcxeronest.png/" }) {
       childImageSharp {
         fixed(width: 271, height: 54) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+     mobileImage: file(absolutePath: { regex: "./accountant-review4x.png/" }) {
+      childImageSharp {
+        fixed(width: 360, height: 211) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    desktopImage:  file(absolutePath: { regex: "./accountant-review4x.png/" }) {
+      childImageSharp {
+         fixed(width: 800, height: 470) {
           ...GatsbyImageSharpFixed
         }
       }

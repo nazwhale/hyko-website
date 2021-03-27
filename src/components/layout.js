@@ -133,7 +133,7 @@ class Layout extends React.Component {
               <>
             <SkewBoxContainer>
               <SkewBox />
-              <ContentContainer>
+              <ContentContainerWithImage >
                 <ContentHeaderSmall>Payroll automation</ContentHeaderSmall>
                 <ContentHeaderLarge>
                   Focus on the clients that need your attention, automate the rest
@@ -144,7 +144,7 @@ class Layout extends React.Component {
                 <Content>
                   If nothing has changed since last month, HMRC will be notified, Xero journals posted, and payslips sent out with zero time spent by your people.
                 </Content>
-              </ContentContainer>
+              </ContentContainerWithImage>
 
             </SkewBoxContainer>
 
@@ -182,6 +182,18 @@ const ContentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+`
+
+const ContentContainerWithImage = styled.div`
+  max-width: 42em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20rem;
+  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
+
+  @media (max-width: 768px) {
+    margin-top: 8rem;
+  }
 `
 
 const ContentHeaderSmall = styled.h4`
