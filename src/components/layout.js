@@ -134,33 +134,33 @@ class Layout extends React.Component {
             <SkewBoxContainer>
               <SkewBox />
               <ContentContainer>
-                <ContentHeaderSmall>Who we are</ContentHeaderSmall>
+                <ContentHeaderSmall>Payroll automation</ContentHeaderSmall>
                 <ContentHeaderLarge>
-                    We've been building Monzo Bank for the last 3 years
+                  Focus on the clients that need your attention, automate the rest
                 </ContentHeaderLarge>
                 <Content>
-                    Having worked in extensively in operations, financial crime, and growth, we understand what process automation is all about.
+                  Hyko's clever dashboard surfaces the clients who really need your attention.
                 </Content>
-                  <Content>
-                    We're at home building software at scale that can't go wrong. Now we're full-time on fixing payroll.
-                  </Content>
+                <Content>
+                  If nothing has changed since last month, HMRC will be notified, Xero journals posted, and payslips sent out with zero time spent by your people.
+                </Content>
               </ContentContainer>
 
             </SkewBoxContainer>
 
               <ContentContainer>
-              <ContentHeaderSmall style={{marginTop: "3rem"}}>The Hyko API</ContentHeaderSmall>
+              <ContentHeaderSmall style={{marginTop: "3rem"}}>Who we are</ContentHeaderSmall>
               <ContentHeaderLarge>
-              Our API is under construction
+              We've been building Monzo Bank for the last 3 years
               </ContentHeaderLarge>
               <Content>
-              This summer we'll publicly expose the API that powers our payroll software. It's going to be trivial to embed payroll in your product.
+                Having worked in extensively in operations, financial crime, and growth, we understand what process automation is all about.
               </Content>
               <Content>
-              If your product would benefit from the Hyko API, let's chat.
+                We're at home building software at scale that can't go wrong. Now we're full-time on fixing payroll.
               </Content>
               <a href="https://calendly.com/naz-hyko">
-              <Button marginTop="2rem" marginBottom="2rem">Book a chat</Button>
+              <Button marginTop="2rem" marginBottom="2rem">Book a demo</Button>
               </a>
               </ContentContainer>
             </>
