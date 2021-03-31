@@ -105,7 +105,7 @@ class IndexPage extends React.Component {
             <br />
           </HeroText>
           <HeroSubtitle>
-            Hyko cuts out the manual work with auto-payroll runs for clients with no changes, auto-email reminders, and Xero & Nest integrations.<br/>Start making real margins on payroll.
+            Hyko cuts out the manual work with auto-payroll runs when the client has approved, auto-email reminders, and Xero & Nest integrations.<br/>Start making real margins on payroll.
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-hyko"
