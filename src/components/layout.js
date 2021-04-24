@@ -27,6 +27,10 @@ const HeaderOptions = styled.div`
 
 const HeaderOption = styled.h3`
   margin-top: 0;
+
+  &:hover {
+    color: grey;
+  }
 `
 
 const SkewBoxContainer = styled.div`
@@ -82,6 +86,11 @@ class Layout extends React.Component {
           </h1>
           <HeaderOptions>
             <HeaderOption>
+              <Link style={{ boxShadow: `none`, color: "inherit" }} to={`/api`}>
+                API
+              </Link>
+            </HeaderOption>
+            <HeaderOption style={{ marginLeft: "1.5rem" }}>
               <Link
                 style={{ boxShadow: `none`, color: "inherit" }}
                 to={`/blog`}
@@ -130,38 +139,48 @@ class Layout extends React.Component {
           </div>
 
           {location.pathname === rootPath && (
-              <>
-            <SkewBoxContainer>
-              <SkewBox />
-              <ContentContainerWithImage >
-                <ContentHeaderSmall>Payroll automation</ContentHeaderSmall>
-                <ContentHeaderLarge>
-                  Focus on the clients that need your attention, automate the rest
-                </ContentHeaderLarge>
-                <Content>
-                  Hyko's clever dashboard surfaces the clients who really need your attention.
-                </Content>
-                <Content>
-                  If nothing has changed since last month, HMRC will be notified, Xero journals posted, and payslips sent out with zero time spent by your people.
-                </Content>
-              </ContentContainerWithImage>
-
-            </SkewBoxContainer>
+            <>
+              <SkewBoxContainer>
+                <SkewBox />
+                <ContentContainerWithImage>
+                  <ContentHeaderSmall>Payroll automation</ContentHeaderSmall>
+                  <ContentHeaderLarge>
+                    Focus on the clients that need your attention, automate the
+                    rest
+                  </ContentHeaderLarge>
+                  <Content>
+                    Hyko's clever dashboard surfaces the clients who really need
+                    your attention.
+                  </Content>
+                  <Content>
+                    If nothing has changed since last month, HMRC will be
+                    notified, Xero journals posted, and payslips sent out with
+                    zero time spent by your people.
+                  </Content>
+                </ContentContainerWithImage>
+              </SkewBoxContainer>
 
               <ContentContainer>
-              <ContentHeaderSmall style={{marginTop: "3rem"}}>Who we are</ContentHeaderSmall>
-              <ContentHeaderLarge>
-              We've been building Monzo Bank for the last 3 years
-              </ContentHeaderLarge>
-              <Content>
-                Having worked in extensively in operations, financial crime, and growth, we understand what process automation is all about.
-              </Content>
-              <Content>
-                We're at home building software at scale that can't go wrong. Now we're full-time on fixing payroll.
-              </Content>
-              <a href="https://calendly.com/naz-hyko">
-              <Button marginTop="2rem" marginBottom="2rem">Book a demo</Button>
-              </a>
+                <ContentHeaderSmall style={{ marginTop: "3rem" }}>
+                  Who we are
+                </ContentHeaderSmall>
+                <ContentHeaderLarge>
+                  We've been building Monzo Bank for the last 3 years
+                </ContentHeaderLarge>
+                <Content>
+                  Having worked in extensively in operations, financial crime,
+                  and growth, we understand what process automation is all
+                  about.
+                </Content>
+                <Content>
+                  We're at home building software at scale that can't go wrong.
+                  Now we're full-time on fixing payroll.
+                </Content>
+                <a href="https://calendly.com/naz-hyko">
+                  <Button marginTop="2rem" marginBottom="2rem">
+                    Book a demo
+                  </Button>
+                </a>
               </ContentContainer>
             </>
           )}

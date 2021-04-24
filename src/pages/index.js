@@ -9,7 +9,7 @@ import Layout from "../components/layout"
 import Button from "../components/button"
 import SEO from "../components/seo"
 
-const HeroTextContainer = styled.div`
+export const HeroTextContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -17,7 +17,7 @@ const HeroTextContainer = styled.div`
   text-align: center;
 `
 
-const HeroText = styled.h1`
+export const HeroText = styled.h1`
   margin-top: 0;
   font-size: 58px;
   line-height: 1.2;
@@ -27,7 +27,7 @@ const HeroText = styled.h1`
   }
 `
 
-const HeroImgContainer = styled.div`
+export const HeroImgContainer = styled.div`
   margin-top: 2rem;
   margin-bottom: -27rem;
 
@@ -36,7 +36,7 @@ const HeroImgContainer = styled.div`
   }
 `
 
-const HeroSubtitle = styled.p`
+export const HeroSubtitle = styled.p`
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -46,7 +46,7 @@ const HeroSubtitle = styled.p`
   }
 `
 
-const ButtonExplainer = styled.p`
+export const ButtonExplainer = styled.p`
   font-size: 18px;
   font-weight: 200;
   color: ${theme.color.darkGrey};
@@ -75,7 +75,6 @@ class IndexPage extends React.Component {
 
     // Set up the array of image data and `media` keys.
     // You can have as many entries as you'd like.
-    console.log(data)
     const heroSources = [
       data.mobileImage.childImageSharp.fixed,
       {
@@ -88,15 +87,14 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Cloud Payroll Software"
-          keywords={[`payroll`, `software`, `cloud`, `accountant`, `payroll provider`]}
+          keywords={[`payroll`, `software`, `cloud`, `provider`, `sage`]}
         />
         <HeroTextContainer>
-
           <Img
             fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
             alt="logos"
             style={{
-              marginBottom: "1.5rem"
+              marginBottom: "1.5rem",
             }}
           />
 
@@ -105,7 +103,10 @@ class IndexPage extends React.Component {
             <br />
           </HeroText>
           <HeroSubtitle>
-            Hyko cuts out the manual work with auto-payroll runs when the client has approved, auto-email reminders, and Xero & Nest integrations.<br/>Start making real margins on payroll.
+            Hyko cuts out the manual work with auto-payroll runs, auto-email
+            reminders, and Xero & Nest integrations.
+            <br />
+            Start making real margins on payroll.
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-hyko"
@@ -123,18 +124,13 @@ class IndexPage extends React.Component {
             </Button>
           </a>
           <ButtonExplainer>
-            Early partners get <span style={{fontWeight:"bold"}}>50% off</span> the retail price <span style={{fontWeight:"bold"}}>for life</span><br/>
-            Based in Edinburgh
+            Early partners get{" "}
+            <span style={{ fontWeight: "bold" }}>50% off</span> the retail price{" "}
+            <span style={{ fontWeight: "bold" }}>for life</span>
           </ButtonExplainer>
 
-
-
           <HeroImgContainer>
-          <Img
-            fixed={heroSources}
-            alt="Hyko's Accountant Portal"
-
-          />
+            <Img fixed={heroSources} alt="Hyko's Accountant Portal" />
           </HeroImgContainer>
         </HeroTextContainer>
       </Layout>
@@ -153,16 +149,16 @@ export const pageQuery = graphql`
         }
       }
     }
-     mobileImage: file(absolutePath: { regex: "./accountant-review4x.png/" }) {
+    mobileImage: file(absolutePath: { regex: "./accountant-review4x.png/" }) {
       childImageSharp {
         fixed(width: 360, height: 211) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    desktopImage:  file(absolutePath: { regex: "./accountant-review4x.png/" }) {
+    desktopImage: file(absolutePath: { regex: "./accountant-review4x.png/" }) {
       childImageSharp {
-         fixed(width: 800, height: 470) {
+        fixed(width: 800, height: 470) {
           ...GatsbyImageSharpFixed
         }
       }
