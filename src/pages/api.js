@@ -39,7 +39,7 @@ function API(props) {
         <ButtonExplainer>
           For early partners we're open to building to your spec
           <br />
-          Documentation + sandbox arriving Summer '21
+          Documentation + sandbox arriving summer '21
         </ButtonExplainer>
       </HeroTextContainer>
     </Layout>
