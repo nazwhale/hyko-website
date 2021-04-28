@@ -123,11 +123,6 @@ class IndexPage extends React.Component {
               Book a demo
             </Button>
           </a>
-          <ButtonExplainer>
-            Early partners get{" "}
-            <span style={{ fontWeight: "bold" }}>50% off</span> the retail price{" "}
-            <span style={{ fontWeight: "bold" }}>for life</span>
-          </ButtonExplainer>
 
           <HeroImgContainer>
             <Img fixed={heroSources} alt="Hyko's Accountant Portal" />
