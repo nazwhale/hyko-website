@@ -49,20 +49,24 @@ The next piece of work is to turn all those buttons in our internal tool into on
 
 We're taking care to ensure that we handle errors correctly and that steps are idempotent (so that we don't mistakenly run any step twice if the process fails and is repeated).
 
-To build this, we used [Redis](https://redis.io/) for a message queue and wrote a little Go library around it. We've called our library it [Sequences](https://github.com/HykoAPI/sequences) and it's open-source for anyone to use or contribute to.
+To build this, we're using [Redis](https://redis.io/) for a message queue. We wrote a little Go library around it and made it open-source for anyone to use or contribute to. It's called [Sequences](https://github.com/HykoAPI/sequences).
 
-Once we're confident in our "Run payroll" button, we'll trigger the above sequence from the customer confirming amounts (instead of us manually pressing the button). At that point, we'll no longer have any manual work involved with a payrun 🎉
+There's still a little bit of work to be done on that flow, but we're confident that May's payruns will be one click.
+
+Once we're confident in our "Run payroll" button, we'll trigger the above sequence when the customer confirms amounts for payroll once a month (instead of us manually pressing the button). At that point, we'll no longer have any manual work involved with a payrun 🎉
 
 
 ## What's next
 
-May is all about streamlining the processes around payroll. That means adding new starters, leavers, and running payroll itself. 
+This month is all about streamlining the processes around payroll. That means adding new starters, leavers, and running payroll itself. 
 
 We have a principle that data should enter the system from the source. That means that if an employee can update their own information, they should. 
 
-Too often convoluted systems arise. For example: employee tells their manager that they want to update their pension contribution. Manager tells the HR team, who tell the finance team, who send a spreadsheet to their accountant, who send a spreadsheet to their outsourced payroll provider, who (finally) enter the information in the software. 
+Too often in payroll convoluted systems arise. For example: employee tells their manager that they want to update their pension contribution. Manager tells the HR team, who tell the finance team, who email a spreadsheet to their accountant, who send a spreadsheet to their outsourced payroll provider, who (finally) enter the information in the software. 
 
-With this many links in the chain changes take a long time to propagate. Mistakes happen, and when they do they take forever to diagnose and rectify. What I'm describing is payroll hell.
+With this many links in the chain changes take a long time to propagate. Mistakes happen, and when they do they take forever to diagnose and rectify. What I'm describing is payroll hell 👹
+
+One common symptom of this type of process is a "payroll cut-off" where changes have to be in half a month before payday (in Hyko changes can be submitted up to and including payday itself).
 
 ![https://www.reddit.com/r/Payroll/comments/ftdwe7/payroll_flowchart_theres_an_issue_with_my_paycheck/](https://preview.redd.it/8p0ap1bzcbq41.jpg?width=640&crop=smart&auto=webp&s=630ec417b3817cc7cc19df2ab77cd3bfb111e97e)
 
