@@ -56,12 +56,32 @@ To build this, we used [Redis](https://redis.io/) for a message queue and wrote 
 Once we're confident in our "Run payroll" button, we'll trigger the above sequence from the customer confirming amounts (instead of us manually pressing the button). At that point, we'll no longer have any manual work involved with a payrun 🎉
 
 
-## New friends
+## What's next
 
-We're delighted to have onboarded [Comma](https://usecomma.com/) as our 3rd customer. They're offering open-banking powered bulk payments functionality so that business owners can pay all their bills in a click. 
+May is all about streamlining the processes around payroll. That means adding new starters, leavers, and running payroll itself. 
+
+We have a principle that data should enter the system from the source. That means that if an employee can update their own information, they should. 
+
+Too often convoluted systems arise. For example: employee tells their manager that they want to update their pension contribution. Manager tells the HR team, who tell the finance team, who send a spreadsheet to their accountant, who send a spreadsheet to their outsourced payroll provider, who (finally) enter the information in the software. 
+
+With this many links in the chain changes take a long time to propagate. Mistakes happen, and when they do they take forever to diagnose and rectify. What I'm describing is payroll hell.
+
+![https://www.reddit.com/r/Payroll/comments/ftdwe7/payroll_flowchart_theres_an_issue_with_my_paycheck/](https://preview.redd.it/8p0ap1bzcbq41.jpg?width=640&crop=smart&auto=webp&s=630ec417b3817cc7cc19df2ab77cd3bfb111e97e)
+
+For both new starters and leavers, we're designing super streamlined flows where the employee enters as much of their own information as possible. No more spreadsheets full of employee data flying around over email.
+
+For small businesses this is a win for the CEO, no longer has to collect information from employees and pass it on to their accountant for payroll.
+
+This month we'll also be exploring the ability to book and keep track of time-off in Hyko. Stay tuned for an update on that in the coming weeks 🤞
 
 
-## Other things we've shipped
+## What we shipped in April
+
+- NEST integration: post contributions after a payrun
+
+- NEST integration: enrol new employees
+
+- Automate pdf generation and emailing of payslips
 
 - Created v1 of our permissions model. This provides the groundwork to allow employees to login and view / update their own details. 
 
@@ -71,7 +91,7 @@ We're delighted to have onboarded [Comma](https://usecomma.com/) as our 3rd cust
 
 - Build the backend for more flexible Xero mappings
 
-- More flight deck improvements, to automate our internal processes
+- Many flight deck improvements to automate our internal processes (so we have more bandwidth to add to this list next month!)
 
 - Implemented pro-rata logic for new joiners and leavers
 
@@ -85,25 +105,12 @@ We're delighted to have onboarded [Comma](https://usecomma.com/) as our 3rd cust
 
 - An integration with [Telleroo](https://www.telleroo.com/) to enable bulk payments in a click (for customers with Telleroo accounts)
 
-  
 
-## What's next
+## New friends
 
-May is all about streamlining the processes around payroll. That means adding new starters, leavers, and running payroll itself. 
+We're delighted to have onboarded [Comma](https://usecomma.com/) in April. 
 
-We have a principle that data should enter the system from the source. That means that if an employee can update their own information, they should. 
-
-Too often convoluted systems arise. For example: employee tells their manager that they want to update their pension contribution. Manager tells the HR team, who tell the finance team, who send a spreadsheet to their accountant, who send a spreadsheet to their outsourced payroll provider, who (finally) enter the information in the software. 
-
-This is payroll hell. With this many links in the chain changes take a long time to propagate, mistakes happen, and when they do they take a long time to diagnose and rectify.
-
-![https://www.reddit.com/r/Payroll/comments/ftdwe7/payroll_flowchart_theres_an_issue_with_my_paycheck/](https://preview.redd.it/8p0ap1bzcbq41.jpg?width=640&crop=smart&auto=webp&s=630ec417b3817cc7cc19df2ab77cd3bfb111e97e)
-
-For both new starters and leavers, we're designing streamlined flows where the employee enters as much of their own information as possible. 
-
-For small businesses this should be a win for the CEO, who will no longer have to collect information from employees and pass it on to their accountant for payroll. 
-
-This month we'll also be exploring the ability to book and keep track of time-off in Hyko. Hopefully there'll be an update on that in the coming weeks 🤞
+They're offering open-banking powered bulk payments functionality with a deep Xero integration, so that business owners can pay all their bills in a click. You can request access to their product [here](https://usecomma.com/request-access).
 
 
 ## Try Hyko for your business
@@ -111,6 +118,3 @@ This month we'll also be exploring the ability to book and keep track of time-of
 We're working super closely with our early customers to build the best possible product. 
 
 While spaces for new customers in May are full, we still have room for more in June. If you're interested in being the next (or simply want to learn more), feel free to [book a chat with us](https://calendly.com/naz-hyko/30min?back=1&month=2021-05). 
-
-
-
