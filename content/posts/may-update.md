@@ -5,9 +5,7 @@ description: NEST and Telleroo integrations go live, automating all the things
 tags:
   - updates
 ---
-# May update
-
-April has been full of building, shipping, and talking to current and potential customers. We're confident that we're shipping things that add real value to our customers. It's a nice time. 
+April has been jam packed with building, shipping, and talking to current and potential customers. We're confident that we're building features that add real value to our customers. It's a nice time. 
 
 Here's an overview of what we've built and what's next.
 
