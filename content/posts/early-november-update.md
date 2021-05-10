@@ -3,7 +3,7 @@ date: 2020-11-08T11:09:14.703Z
 title: November update
 description: XML wrangling, getting back momentum
 tags:
-  - engineering
+  - updates
 ---
 We lost a bit of momentum. Day jobs, pandemic. But we're back and have carved out a little time each week to keep the pace up.
 

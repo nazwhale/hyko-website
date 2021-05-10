@@ -5,11 +5,11 @@ description: Here's a selection of things we're currently thinking about. It's a
   snapshot of Hyko's March roadmap, crimped from an email we sent to our
   customers earlier today.
 tags:
-  - Updates
+  - updates
 ---
 Here's a selection of things we're currently thinking about. It's a snapshot of Hyko's March roadmap, crimped from an email we sent to our customers earlier today.
 
-**HMRC recognition 💥** 
+## HMRC recognition 💥
 
 ![](https://i.imgur.com/0QYRGBt.png)
 A couple of months ago we became a UK recognised payroll provider, which means we're now on the [big list](https://www.gov.uk/payroll-software/paid-for-software). 
@@ -30,7 +30,7 @@ The new tax year starts next month on 6th April, and for Hyko that means buildin
 
 We've also got to the normal end of year responsibilities that go with being a business. I'm spending this morning figuring out how to submit our end of year accounts and confirmation statement to companies house. Probably another product in there somewhere...
 
-**Xero integration 0️⃣**
+## Xero integration 0️⃣
 
 ![](https://i.imgur.com/69rrE0I.png)
 
@@ -40,7 +40,7 @@ The plus out of all this is that the bug was highlighted from the credits and de
 
 Our Xero integration has now rolled out for all customers ✅ We plan to scope out getting on the [Xero app marketplace](https://apps.xero.com/uk) soon as another growth channel to test. 
 
-**Payments 💸**
+## Payments 💸
 
 ![A sketch of a potential payments flow with an eMoney account in the middle, which we'd hope to bypass with the open banking bulk payments api](https://i.imgur.com/3ZRdrxh.png)
 
@@ -52,24 +52,24 @@ If that all checks out, we'll be able to provide you bulk payment functionality 
 
 Still a little scoping to be done until we can provide an ETA on this one, but we're hopeful we'll be able to get something working. 
 
-**Nest 🐣**
+## Nest 🐣
 
 Nest have (finally) granted us access to their test site, which means we can start building functionality to auto-enrol new employees and post updates. 
 
 We don't plan to start work on this for now, just because there's things we absolutely have to do sooner (end of year stuff) and features we'll be prioritising over Nest (instant payments). Still, good to have  unblocked. 
 
-**API 🗼**
+## API 🗼
 
 There's so many things we want to do right now (improve a bunch of flows in the frontend, clearly position our landing page instead of some software-api hybrid thing), and high up the list is to expose a public API with best in class documentation. 
 
 We've been battle-testing our core payroll logic with our customers and now have confidence that an API is something we'll be able to offer soon. We'll keep you updated!
 
 
-**Chill pill 🧘**
+## Chill pill 🧘
 
 We're going to take a few days off on 15th-17th March. It's been pretty non-stop since December. We're both fatigued and need some time to recharge 💪 
 
-**Hi 👋**
+## Hi 👋
 
 We're currently working super closely with our first few customers, getting our product purring before scaling up and exposing our public payroll API.
 

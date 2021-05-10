@@ -1,6 +1,6 @@
 ---
 date: 2020-07-18T10:18:18.367Z
-title: "Mid-July update "
+title: July update
 description: Hyko is officially a limited company!
 tags:
   - updates
