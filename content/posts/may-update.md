@@ -25,9 +25,9 @@ These were some of the top requested features by our customers. Feels good to be
 
 Pre-April, for every payrun we were running a script to generate payslips for employers in HTML and CSS, then opening the ouput in Chrome and saving as a pdf, then writing an email to each customer with their payslips for the month. 
 
-Now, we press a button in our internal tool after each payrun and pdf's are instantly sent out to each employee's email address. 
+Now, we press a button in our internal tool after each payrun and pdfs are instantly sent out to each employee's email address. 
 
-We're using [SendGrid](https://sendgrid.com/) to send out emails and the [ChromeDP](https://github.com/chromedp/chromedp) Go library to automate the HTML/CSS to pdf conversion. We assumed generating pdf's was going to be a massive faff and we were half-right.
+We're using [SendGrid](https://sendgrid.com/) to send out emails and the [ChromeDP](https://github.com/chromedp/chromedp) Go library to automate the HTML/CSS to pdf conversion. We assumed generating pdfs was going to be a massive faff and we were half-right.
 
 The most difficult part was debugging some behaviour around importing a Google font via a link. The library doesn't deal too well with failure, so when a network request to grab a font from Google didn't succeed the payslip stopped generating mid-render. This resulted in non-deterministic output, which confused the heck out of us for half a day.
 
@@ -51,7 +51,7 @@ The next piece of work is to turn all those buttons in our internal tool into on
 
 We're taking care to ensure that we handle errors correctly and that steps are idempotent (so that we don't mistakenly run any step twice if the process fails and is repeated).
 
-To build this, we're using [Redis](https://redis.io/) for a message queue. We wrote a little Go library around it and made it open-source for anyone to use or contribute to. It's called [Sequences](https://github.com/HykoAPI/sequences).
+To build this, we're using [Redis](https://redis.io/) for a message queue. We wrote a little Go library around it and made it open-source for anyone to use or contribute to. It's called [Sequences](https://github.com/HykoAPI/sequences) (we'll get round to documenting it properly, promise!).
 
 There's still a little bit of work to be done on that flow, but we're confident that May's payruns will be one click.
 
@@ -121,4 +121,6 @@ They're offering open-banking powered bulk payments functionality with a deep Xe
 
 We're working super closely with our early customers to build the best possible product. 
 
-While spaces for new customers in May are full, we still have room for more in June. If you're interested in being the next (or simply want to learn more), feel free to [book a chat with us](https://calendly.com/naz-hyko/30min?back=1&month=2021-05). 
+While spaces for new customers in May are full, we still have room for more in June. We're particularly looking to onboard more small businesses and API partners.
+
+If you're interested in being the next (or simply want to learn more), feel free to [book a chat with us](https://calendly.com/naz-hyko/30min?back=1&month=2021-05). 
