@@ -144,7 +144,7 @@ class Layout extends React.Component {
                 <SkewBox />
                 <ContentContainerWithImage>
                   <ContentHeaderSmall>
-                    Simplify your processes
+                    Slick people processes that scale
                   </ContentHeaderSmall>
                   <ContentHeaderLarge>
                     Finally, payroll and HR in one place
