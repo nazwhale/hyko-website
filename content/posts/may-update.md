@@ -51,7 +51,7 @@ The next piece of work is to turn all those buttons in our internal tool into on
 
 We're taking care to ensure that we handle errors correctly and that steps are idempotent (so that we don't mistakenly run any step twice if the process fails and is repeated).
 
-To build this, we're using [Redis](https://redis.io/) for a message queue. We wrote a little Go library around it and made it open-source for anyone to use or contribute to. It's called [Sequences](https://github.com/HykoAPI/sequences).
+To build this, we're using [Redis](https://redis.io/) for a message queue. We wrote a little Go library around it and made it open-source for anyone to use or contribute to. It's called [Sequences](https://github.com/HykoAPI/sequences) (we'll get round to documenting it properly, promise!).
 
 There's still a little bit of work to be done on that flow, but we're confident that May's payruns will be one click.
 
