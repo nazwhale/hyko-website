@@ -143,19 +143,20 @@ class Layout extends React.Component {
               <SkewBoxContainer>
                 <SkewBox />
                 <ContentContainerWithImage>
-                  <ContentHeaderSmall>Payroll automation</ContentHeaderSmall>
+                  <ContentHeaderSmall>
+                    Simplify your processes
+                  </ContentHeaderSmall>
                   <ContentHeaderLarge>
-                    Focus on the clients that need your attention, automate the
-                    rest
+                    Finally, payroll and HR in one place
                   </ContentHeaderLarge>
                   <Content>
-                    Hyko's clever dashboard surfaces the clients who really need
-                    your attention.
+                    Hyko provides one centralised place for all your employee
+                    data. Then goes further to make the processes around adding
+                    employees and updating information super slick.
                   </Content>
                   <Content>
-                    If nothing has changed since last month, HMRC will be
-                    notified, Xero journals posted, and payslips sent out with
-                    zero time spent by your people.
+                    No more emailing sensitive data to your accountant or
+                    spending ages typing in employee information.
                   </Content>
                 </ContentContainerWithImage>
               </SkewBoxContainer>
@@ -207,11 +208,11 @@ const ContentContainerWithImage = styled.div`
   max-width: 42em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20rem;
+  //margin-top: 20rem;
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
 
   @media (max-width: 768px) {
-    margin-top: 8rem;
+    //margin-top: 8rem;
   }
 `
 

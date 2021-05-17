@@ -14,9 +14,6 @@ function API(props) {
       <SEO title="API" />
       <HeroTextContainer>
         <h1>
-          <span role="img" aria-label="blog">
-            🗼{" "}
-          </span>{" "}
           The payroll API for the UK
           <br />
         </h1>

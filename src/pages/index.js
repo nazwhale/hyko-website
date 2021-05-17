@@ -75,13 +75,13 @@ class IndexPage extends React.Component {
 
     // Set up the array of image data and `media` keys.
     // You can have as many entries as you'd like.
-    const heroSources = [
-      data.mobileImage.childImageSharp.fixed,
-      {
-        ...data.desktopImage.childImageSharp.fixed,
-        media: `(min-width: 768px)`,
-      },
-    ]
+    // const heroSources = [
+    //   data.mobileImage.childImageSharp.fixed,
+    //   {
+    //     ...data.desktopImage.childImageSharp.fixed,
+    //     media: `(min-width: 768px)`,
+    //   },
+    // ]
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -99,14 +99,12 @@ class IndexPage extends React.Component {
           />
 
           <HeroText>
-            Cloud payroll software for accountants
+            Modern payroll software for startups
             <br />
           </HeroText>
           <HeroSubtitle>
             Hyko cuts out the manual work with auto-payroll runs, auto-email
             reminders, and Xero & Nest integrations.
-            <br />
-            Start making real margins on payroll.
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-hyko"
@@ -123,10 +121,6 @@ class IndexPage extends React.Component {
               Book a demo
             </Button>
           </a>
-
-          <HeroImgContainer>
-            <Img fixed={heroSources} alt="Hyko's Accountant Portal" />
-          </HeroImgContainer>
         </HeroTextContainer>
       </Layout>
     )
