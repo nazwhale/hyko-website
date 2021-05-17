@@ -25,9 +25,9 @@ These were some of the top requested features by our customers. Feels good to be
 
 Pre-April, for every payrun we were running a script to generate payslips for employers in HTML and CSS, then opening the ouput in Chrome and saving as a pdf, then writing an email to each customer with their payslips for the month. 
 
-Now, we press a button in our internal tool after each payrun and pdf's are instantly sent out to each employee's email address. 
+Now, we press a button in our internal tool after each payrun and pdfs are instantly sent out to each employee's email address. 
 
-We're using [SendGrid](https://sendgrid.com/) to send out emails and the [ChromeDP](https://github.com/chromedp/chromedp) Go library to automate the HTML/CSS to pdf conversion. We assumed generating pdf's was going to be a massive faff and we were half-right.
+We're using [SendGrid](https://sendgrid.com/) to send out emails and the [ChromeDP](https://github.com/chromedp/chromedp) Go library to automate the HTML/CSS to pdf conversion. We assumed generating pdfs was going to be a massive faff and we were half-right.
 
 The most difficult part was debugging some behaviour around importing a Google font via a link. The library doesn't deal too well with failure, so when a network request to grab a font from Google didn't succeed the payslip stopped generating mid-render. This resulted in non-deterministic output, which confused the heck out of us for half a day.
 
