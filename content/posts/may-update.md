@@ -121,4 +121,6 @@ They're offering open-banking powered bulk payments functionality with a deep Xe
 
 We're working super closely with our early customers to build the best possible product. 
 
-While spaces for new customers in May are full, we still have room for more in June. If you're interested in being the next (or simply want to learn more), feel free to [book a chat with us](https://calendly.com/naz-hyko/30min?back=1&month=2021-05). 
+While spaces for new customers in May are full, we still have room for more in June. We're particularly looking to onboard more small businesses and API partners.
+
+If you're interested in being the next (or simply want to learn more), feel free to [book a chat with us](https://calendly.com/naz-hyko/30min?back=1&month=2021-05). 
