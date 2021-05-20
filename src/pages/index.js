@@ -86,7 +86,7 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Cloud Payroll Software"
+          title="The Complete People Platform"
           keywords={[`payroll`, `software`, `cloud`, `provider`, `sage`]}
         />
         <HeroTextContainer>
