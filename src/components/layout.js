@@ -147,16 +147,17 @@ class Layout extends React.Component {
                     People processes that scale
                   </ContentHeaderSmall>
                   <ContentHeaderLarge>
-                    Finally, payroll and HR in one place
+                    All your people information in one place
                   </ContentHeaderLarge>
                   <Content>
-                    Hyko provides one centralised place for all your employee
-                    data. Then goes further to make the processes around adding
-                    employees and updating information super slick.
+                    That means less spreadsheets and no more emailing sensitive
+                    data to your accountant. No more mid-month cutoff dates and
+                    checking payroll by hand.
                   </Content>
                   <Content>
-                    No more emailing sensitive data to your accountant or
-                    spending ages typing in employee information.
+                    With Hyko, salary updates and new joiners can be added right
+                    up until payday. Payroll is reported to HMRC from the same
+                    tool – no 3rd party needed.
                   </Content>
                 </ContentContainerWithImage>
               </SkewBoxContainer>

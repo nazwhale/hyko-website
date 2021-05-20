@@ -99,12 +99,12 @@ class IndexPage extends React.Component {
           />
 
           <HeroText>
-            Modern payroll software for startups
+            Finally, HR and payroll in one place
             <br />
           </HeroText>
           <HeroSubtitle>
-            Hyko cuts out the manual work with auto-payroll runs, auto-email
-            reminders, and Xero & Nest integrations.
+            A complete platform with onboarding, HR, payroll, time-off (coming
+            soon!), and Xero & Nest integrations
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-hyko"
