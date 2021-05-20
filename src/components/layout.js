@@ -143,9 +143,7 @@ class Layout extends React.Component {
               <SkewBoxContainer>
                 <SkewBox />
                 <ContentContainerWithImage>
-                  <ContentHeaderSmall>
-                    People processes that scale
-                  </ContentHeaderSmall>
+                  <ContentHeaderSmall>A system that scales</ContentHeaderSmall>
                   <ContentHeaderLarge>
                     All your people information in one place
                   </ContentHeaderLarge>
