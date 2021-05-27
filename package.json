@@ -1,7 +1,7 @@
 {
-  "name": "hyko-payroll",
+  "name": "hyko",
   "private": true,
-  "description": "Modern API-driven Payroll for 2020",
+  "description": "HR + Payroll for 2021",
   "version": "1.0.0",
   "author": "Naz Malik <whoisnazm@gmail.com>",
   "bugs": {

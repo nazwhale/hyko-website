@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Hyko Payroll`,
+    title: `Hyko HR + Payroll`,
     author: `Naz`,
-    description: `Hyko Payroll`,
+    description: `Hyko HR + Payroll`,
     siteUrl: `https://www.hyko.uk/`,
     social: {
       twitter: `nazwhale`,
