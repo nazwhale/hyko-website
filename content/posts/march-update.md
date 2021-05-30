@@ -2,12 +2,12 @@
 date: 2021-03-02T15:47:36.434Z
 title: March update
 description: Here's a selection of things we're currently thinking about. It's a
-  snapshot of Hyko's March roadmap, crimped from an email we sent to our
+  snapshot of our March roadmap, crimped from an email we sent to our
   customers earlier today.
 tags:
   - updates
 ---
-Here's a selection of things we're currently thinking about. It's a snapshot of Hyko's March roadmap, crimped from an email we sent to our customers earlier today.
+Here's a selection of things we're currently thinking about. It's a snapshot of our March roadmap, crimped from an email we sent to our customers earlier today.
 
 ## HMRC recognition 💥
 
@@ -20,7 +20,7 @@ Will get round to slamming a "HMRC recognised" badge on the website at some poin
 
 **New tax year 🍾** 
 
-The new tax year starts next month on 6th April, and for Hyko that means building a bunch of end of year bits:
+The new tax year starts next month on 6th April, and for us that means building a bunch of end of year bits:
 
 • P60s (a summary of all the tax you've paid for the tax year)
 
@@ -73,4 +73,4 @@ We're going to take a few days off on 15th-17th March. It's been pretty non-stop
 
 We're currently working super closely with our first few customers, getting our product purring before scaling up and exposing our public payroll API.
 
-If you'd like to be our next customer, we'd love to chat. If you're a small business wanting a slicker payroll experience or a founder who wants to offer payroll in their product then you could be a perfect fit. Feel free to [drop in a meeting here](https://calendly.com/naz-hyko/30min?back=1&month=2021-03).
+If you'd like to be our next customer, we'd love to chat. If you're a small business wanting a slicker payroll experience or a founder who wants to offer payroll in their product then you could be a perfect fit. Feel free to [drop in a meeting here](https://calendly.com/naz-onfolk).

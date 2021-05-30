@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo
-          title="All-In-One People Platform for Payroll, HR, Time-Off"
+          title="The All-In-One People Platform for Payroll, HR, Time-Off"
           keywords={[`payroll`, `software`, `hr`, `provider`, `hris`]}
         />
         <VStack textAlign="center" spacing={8} mb={8}>
@@ -35,16 +35,14 @@ class IndexPage extends React.Component {
             fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
             alt="logos"
           />
-
-          <Heading size="2xl" as="h1">
+          <Heading size="2xl" as="h1" lineHeight={"1.2"}>
             Finally, modern HR and payroll in one place
           </Heading>
-
+          l
           <Text fontSize={["xl", "2xl"]}>
             Onfolk is your people platform. With onboarding, HR, payroll,
             time-off, and Xero & Nest integrations.
           </Text>
-
           <a
             href="https://calendly.com/naz-onfolk"
             style={{ boxShadow: "none" }}
@@ -60,7 +58,6 @@ class IndexPage extends React.Component {
               Book a demo
             </Button>
           </a>
-
           <Box>
             <Heading
               textTransform="uppercase"

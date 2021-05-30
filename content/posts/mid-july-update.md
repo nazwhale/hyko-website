@@ -31,11 +31,11 @@ I'm currently looking through a few tools for our docs. Options are:
 
 After having a play around with Swagger and being a little dissapointed by the output, I decided to throw up something on Slate for now while I'm waiting for GitBook to get back to me. 
 
-You can check out our API docs [here](https://docs.hyko.uk/#introduction) 👀
+You can check out our API docs [here](https://docs.onfolk.com) 👀
 
 ![Hyko API docs](https://i.imgur.com/W0QIczG.png)
 
-If you want to have a go at auto-generating API docs with Swagger from Go code, I wrote a little how-to [here](https://hyko.uk/blog/swagger-with-go-walkthrough/).
+If you want to have a go at auto-generating API docs with Swagger from Go code, I wrote a little how-to [here](https://onfolk.com/blog/swagger-with-go-walkthrough/).
 
 ## API design
 
