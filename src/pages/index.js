@@ -39,8 +39,8 @@ class IndexPage extends React.Component {
           <Heading size="2xl">Finally, HR and payroll in one place</Heading>
 
           <Text fontSize="2xl">
-            A complete platform with onboarding, HR, payroll, time-off, and Xero
-            & Nest integrations
+            A complete people platform with onboarding, HR, payroll, time-off,
+            and Xero & Nest integrations
           </Text>
 
           <a
