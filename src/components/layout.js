@@ -153,9 +153,9 @@ class Layout extends React.Component {
                     checking payroll by hand.
                   </Content>
                   <Content>
-                    With Hyko, salary updates and new joiners can be added right
-                    up until payday. Payroll is reported to HMRC from the same
-                    tool – no 3rd party needed.
+                    With Onfolk, salary updates and new joiners can be added
+                    right up until payday. Payroll is reported to HMRC from the
+                    same tool – no 3rd party needed.
                   </Content>
                 </ContentContainerWithImage>
               </SkewBoxContainer>
@@ -176,7 +176,7 @@ class Layout extends React.Component {
                   We're at home building software at scale that saves time on
                   internal processes.
                 </Content>
-                <a href="https://calendly.com/naz-hyko">
+                <a href="https://calendly.com/naz-onfolk">
                   <Button marginTop="2rem" marginBottom="2rem">
                     Book a demo
                   </Button>

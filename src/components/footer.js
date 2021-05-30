@@ -113,10 +113,10 @@ function Footer() {
               letterSpacing: "0.05em",
             }}
           >
-            Hyko
+            Onfolk
           </span>
           <span style={{ fontSize: "14px" }}>
-            © Hyko.uk {new Date().getFullYear()}
+            © Onfolk.com {new Date().getFullYear()}
           </span>
         </Content>
       </FooterContainer>

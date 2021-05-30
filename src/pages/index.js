@@ -87,7 +87,7 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="The Complete People Platform"
-          keywords={[`payroll`, `software`, `cloud`, `provider`, `sage`]}
+          keywords={[`payroll`, `software`, `hr`, `provider`, `hris`]}
         />
         <HeroTextContainer>
           <Img
@@ -107,7 +107,7 @@ class IndexPage extends React.Component {
             soon!), and Xero & Nest integrations
           </HeroSubtitle>
           <a
-            href="https://calendly.com/naz-hyko"
+            href="https://calendly.com/naz-onfolk"
             style={{ boxShadow: "none" }}
             onClick={this.emitAnalyticsEvent}
           >

@@ -6,11 +6,11 @@ description: This privacy notice details how we look after your personal data wh
 
 ## Who we are
 
-Hyko is responsible for this website. Hyko is a trading name of Hyko Limited. Hyko is a payroll web application and API used by employers or their appointed representatives to processes personal data of their employees in order to facilitate their legal payroll and pension obligations
+Onfolk is responsible for this website. Onfolk is a trading name of Hyko Limited. Onfolk is a payroll and HR web application and API used by employers or their appointed representatives to processes personal data of their employees in order to facilitate their legal payroll and pension obligations
 
 ### Purpose of this Privacy Notice
 
-This privacy notice aims to give you information on how Hyko collects and processes your personal data through your use of this website, including any data you may provide to us by using our software to receive services as an employer employee, or a service provider to employers.
+This privacy notice aims to give you information on how Onfolk collects and processes your personal data through your use of this website, including any data you may provide to us by using our software to receive services as an employer employee, or a service provider to employers.
 
 Neither our website or software are intended for children, as such we do not knowingly collect data relating to children.
 
@@ -20,13 +20,13 @@ It is important that you read this privacy notice together with any other privac
 
 **If you are using our software as an employer**
 
-Hyko shall be the data processor (as defined in the GDPR) of the payroll information and personal data of employees that you provide to us through our software, and you, as the employer, shall remain the data controller of such information and be responsible for this data. We shall process this personal data in accordance with the terms of this privacy policy and our terms and conditions of business.
+Onfolk shall be the data processor (as defined in the GDPR) of the payroll information and personal data of employees that you provide to us through our software, and you, as the employer, shall remain the data controller of such information and be responsible for this data. We shall process this personal data in accordance with the terms of this privacy policy and our terms and conditions of business.
 
 **If you are using our software as an employee**
 
 Your employer shall remain the data controller of the information you have provided to them and also to us through the use of our application. This privacy policy sets out how we process your personal data on behalf of your employers and the rights that you have in relation to such information.
 
-Hyko shall be collectively referred to as “Hyko”, “we”, “us” or “our” in this privacy notice).
+Onfolk shall be collectively referred to as “Onfolk”, “we”, “us” or “our” in this privacy notice).
 
 We have appointed a data privacy manager who is responsible for overseeing questions in relation to this privacy notice. If you have any questions about this privacy notice, including any requests to exercise your legal rights, please contact the data privacy manager using the details set out below.
 
@@ -34,7 +34,7 @@ We have appointed a data privacy manager who is responsible for overseeing quest
 | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
 | Address                                                           | Hyko Limited, 19 Heron Lane, Stratford-Upon-Avon, England, CV37 9EG |
 | Name of Data Protection Officer                                   | Nadeem Malik                                                        |
-| Email Address                                                     | naz@hyko.uk                                                         |
+| Email Address                                                     | naz@onfolk.com                                                         |
 
 You have the right to make a complaint at any time to the Information Commissioner’s Office (ICO), the UK supervisory authority for data protection issues (www.ico.org.uk). We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please contact us in the first instance.
 
