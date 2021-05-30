@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Button from "../components/button"
 
 class BlogPage extends React.Component {
@@ -14,7 +14,7 @@ class BlogPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Blog" />
+        <Seo title="Blog" />
         <h1 style={{ marginTop: 0, marginBottom: "3rem" }}>
           <span role="img" aria-label="blog">
             📖{" "}

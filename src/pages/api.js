@@ -1,9 +1,39 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { graphql } from "gatsby"
 import Button from "../components/button"
-import { HeroSubtitle, HeroTextContainer, ButtonExplainer } from "./index"
+import styled from "styled-components"
+import { theme } from "../theme/theme"
+
+const HeroTextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-align: center;
+`
+
+const HeroSubtitle = styled.p`
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+`
+
+const ButtonExplainer = styled.p`
+  font-size: 18px;
+  font-weight: 200;
+  color: ${theme.color.darkGrey};
+  margin-top: 1rem;
+  margin-bottom: 0;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+`
 
 function API(props) {
   const { data, location } = props
@@ -11,7 +41,7 @@ function API(props) {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="API" />
+      <Seo title="API" />
       <HeroTextContainer>
         <h1>
           The payroll API for the UK

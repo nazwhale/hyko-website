@@ -20,6 +20,16 @@ module.exports = {
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: "@chakra-ui/gatsby-plugin",
+      options: {
+        /**
+         * @property {boolean} [resetCSS=true]
+         * if false, this plugin will not use `<CSSReset />
+         */
+        resetCSS: false,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/posts`,

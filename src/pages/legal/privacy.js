@@ -4,7 +4,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import { rhythm, scale } from "../../utils/typography"
 import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Seo from "../../components/seo"
 import Button from "../../components/button"
 
 class PrivacyPolicyPage extends React.Component {
@@ -17,7 +17,7 @@ class PrivacyPolicyPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title={pageTitle} />
+        <Seo title={pageTitle} />
         <h1 style={{ marginTop: "1rem", marginBottom: "3rem" }}>
           <span role="img" aria-label="blog">
             🔐{" "}

@@ -1,61 +1,12 @@
 import React from "react"
-import styled from "styled-components"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+import { Heading, Box, Text, VStack, Wrap } from "@chakra-ui/react"
 
-import { theme } from "../theme/theme"
 import Layout from "../components/layout"
 import Button from "../components/button"
-import SEO from "../components/seo"
-
-export const HeroTextContainer = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  text-align: center;
-`
-
-export const HeroText = styled.h1`
-  margin-top: 0;
-  font-size: 58px;
-  line-height: 1.2;
-
-  @media (max-width: 768px) {
-    font-size: 38px;
-  }
-`
-
-export const HeroImgContainer = styled.div`
-  margin-top: 2rem;
-  margin-bottom: -27rem;
-
-  @media (max-width: 768px) {
-    margin-bottom: -15rem;
-  }
-`
-
-export const HeroSubtitle = styled.p`
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 1rem;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-`
-
-export const ButtonExplainer = styled.p`
-  font-size: 18px;
-  font-weight: 200;
-  color: ${theme.color.darkGrey};
-  margin-top: 1rem;
-  margin-bottom: 0;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
-`
+import Seo from "../components/seo"
 
 class IndexPage extends React.Component {
   emitAnalyticsEvent = () => {
@@ -73,39 +24,25 @@ class IndexPage extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
-    // Set up the array of image data and `media` keys.
-    // You can have as many entries as you'd like.
-    // const heroSources = [
-    //   data.mobileImage.childImageSharp.fixed,
-    //   {
-    //     ...data.desktopImage.childImageSharp.fixed,
-    //     media: `(min-width: 768px)`,
-    //   },
-    // ]
-
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title="The Complete People Platform"
           keywords={[`payroll`, `software`, `hr`, `provider`, `hris`]}
         />
-        <HeroTextContainer>
+        <VStack textAlign="center" spacing={8} mb={8}>
           <Img
             fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
             alt="logos"
-            style={{
-              marginBottom: "1.5rem",
-            }}
           />
 
-          <HeroText>
-            Finally, HR and payroll in one place
-            <br />
-          </HeroText>
-          <HeroSubtitle>
+          <Heading size="2xl">Finally, HR and payroll in one place</Heading>
+
+          <Text fontSize="2xl">
             A complete platform with onboarding, HR, payroll, time-off, and Xero
             & Nest integrations
-          </HeroSubtitle>
+          </Text>
+
           <a
             href="https://calendly.com/naz-onfolk"
             style={{ boxShadow: "none" }}
@@ -121,7 +58,35 @@ class IndexPage extends React.Component {
               Book a demo
             </Button>
           </a>
-        </HeroTextContainer>
+
+          <Box>
+            <Heading
+              textTransform="uppercase"
+              color="#1B2244"
+              size="xs"
+              opacity="0.3"
+              mt={4}
+            >
+              trusted by
+            </Heading>
+            <Wrap justify="center" spacing={16} mt={2} opacity="0.4">
+              <Box pt={1.5}>
+                <Img
+                  fixed={data.commaLogo.childImageSharp.fixed}
+                  alt="partnerLogo"
+                />
+              </Box>
+              <Img
+                fixed={data.cableLogo.childImageSharp.fixed}
+                alt="partnerLogo"
+              />
+              <Img
+                fixed={data.twentyTwentyLogo.childImageSharp.fixed}
+                alt="partnerLogo"
+              />
+            </Wrap>
+          </Box>
+        </VStack>
       </Layout>
     )
   }
@@ -134,6 +99,27 @@ export const pageQuery = graphql`
     hmrcXeroNestLogos: file(absolutePath: { regex: "./hmrcxeronest.png/" }) {
       childImageSharp {
         fixed(width: 271, height: 54) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    commaLogo: file(absolutePath: { regex: "./CommaLogo.png/" }) {
+      childImageSharp {
+        fixed(width: 124, height: 25) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    cableLogo: file(absolutePath: { regex: "./CableLogo.png/" }) {
+      childImageSharp {
+        fixed(width: 93, height: 30) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    twentyTwentyLogo: file(absolutePath: { regex: "./TwentyTwentyLogo.png/" }) {
+      childImageSharp {
+        fixed(width: 124, height: 40) {
           ...GatsbyImageSharpFixed
         }
       }
