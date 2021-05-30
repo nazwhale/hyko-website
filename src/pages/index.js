@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo
-          title="The Complete People Platform"
+          title="All-In-One People Platform for Payroll, HR, Time-Off"
           keywords={[`payroll`, `software`, `hr`, `provider`, `hris`]}
         />
         <VStack textAlign="center" spacing={8} mb={8}>
@@ -36,7 +36,7 @@ class IndexPage extends React.Component {
             alt="logos"
           />
 
-          <Heading size="2xl">
+          <Heading size="2xl" as="h1">
             Finally, modern HR and payroll in one place
           </Heading>
 

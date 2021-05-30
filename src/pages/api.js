@@ -41,7 +41,10 @@ function API(props) {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="API" />
+      <Seo
+        title="The Payroll API for the UK"
+        keywords={[`payroll`, `api`, `uk`, `integrate`, `remote`]}
+      />
       <HeroTextContainer>
         <h1>
           The payroll API for the UK
