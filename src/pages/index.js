@@ -103,8 +103,8 @@ class IndexPage extends React.Component {
             <br />
           </HeroText>
           <HeroSubtitle>
-            A complete platform with onboarding, HR, payroll, time-off (coming
-            soon!), and Xero & Nest integrations
+            A complete platform with onboarding, HR, payroll, time-off, and Xero
+            & Nest integrations
           </HeroSubtitle>
           <a
             href="https://calendly.com/naz-onfolk"
