@@ -77,7 +77,7 @@ function Footer() {
 
             <span style={{ fontSize: "14px" }}>
               <a
-                href="http://docs.hyko.uk"
+                href="http://docs.onfolk.com"
                 style={{
                   textDecoration: "none",
                   color: "inherit",
