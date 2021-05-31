@@ -165,7 +165,7 @@ class Layout extends React.Component {
                   Who we are
                 </ContentHeaderSmall>
                 <ContentHeaderLarge>
-                  We've been building Monzo Bank for the last 3 years
+                  We've been building Monzo Bank for the last 4 years
                 </ContentHeaderLarge>
                 <Content>
                   Having worked in extensively in operations, financial crime,
