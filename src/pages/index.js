@@ -40,9 +40,10 @@ class IndexPage extends React.Component {
           </Heading>
           l
           <Text fontSize={["xl", "2xl"]}>
-            Onfolk is your people platform. With onboarding, HR, payroll,
-            time-off, and Xero & Nest integrations.
+            Onfolk is your people platform. With time-off, pensions, HR,
+            payroll, onboarding, and a Xero integration
           </Text>
+          <Text fontSize={["xl", "2xl"]}>At £5 per employee per month</Text>
           <a
             href="https://calendly.com/naz-onfolk"
             style={{ boxShadow: "none" }}
