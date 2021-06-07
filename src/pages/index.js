@@ -36,12 +36,12 @@ class IndexPage extends React.Component {
             alt="logos"
           />
           <Heading size="2xl" as="h1" lineHeight={"1.2"}>
-            Finally, modern HR and payroll in one place
+            Finally, HR and payroll in one place
           </Heading>
           l
           <Text fontSize={["xl", "2xl"]}>
-            Onfolk is your people platform. With time-off, pensions, HR,
-            payroll, onboarding, and a Xero integration
+            With time-off, pensions, HR, payroll, onboarding, and a Xero
+            integration. For modern companies.
           </Text>
           <Text fontSize={["xl", "2xl"]}>At £5 per employee per month</Text>
           <a
