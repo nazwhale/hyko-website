@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
       // string - required - The object that was interacted with (e.g.video)
       category: `apply button`,
       // string - required - Type of interaction (e.g. 'play')
-      action: `click`,
+      action: `demo-click`,
       // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
       label: `Apply for early access`,
     })
@@ -40,8 +40,8 @@ class IndexPage extends React.Component {
           </Heading>
           l
           <Text fontSize={["xl", "2xl"]}>
-            With time-off, pensions, HR, payroll, onboarding, and a Xero
-            integration. For modern companies.
+            A modern people system with time-off, pensions, HR, payroll,
+            onboarding, and a Xero integration.
           </Text>
           <Text fontSize={["xl", "2xl"]}>At £5 per employee per month</Text>
           <a

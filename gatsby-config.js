@@ -15,7 +15,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-remove-serviceworker`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-sitemap`,
@@ -97,8 +96,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Hyko Payroll`,
-        short_name: `Hyko Payroll`,
+        name: `Onfolk`,
+        short_name: `Onfolk`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
