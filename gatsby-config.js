@@ -17,7 +17,12 @@ module.exports = {
     `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/sitemap.xml",
+      },
+    },
     {
       resolve: "@chakra-ui/gatsby-plugin",
       options: {
