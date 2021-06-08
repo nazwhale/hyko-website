@@ -4,7 +4,7 @@ module.exports = {
     title: `Onfolk`,
     author: `Naz`,
     description: `Onfolk HR + Payroll`,
-    siteUrl: `https://www.onfolk.com/`,
+    siteUrl: `https://www.onfolk.com`,
     social: {
       twitter: `nazwhale`,
     },
