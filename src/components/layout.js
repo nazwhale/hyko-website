@@ -176,7 +176,7 @@ class Layout extends React.Component {
                   We're at home building software at scale that saves time on
                   internal processes.
                 </Content>
-                <a href="https://calendly.com/naz-onfolk">
+                <a href="https://calendly.com/naz-onfolk/25min">
                   <Button marginTop="2rem" marginBottom="2rem">
                     Book a demo
                   </Button>

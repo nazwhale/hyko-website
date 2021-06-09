@@ -45,7 +45,7 @@ class IndexPage extends React.Component {
           </Text>
           <Text fontSize={["xl", "2xl"]}>At £5 per employee per month</Text>
           <a
-            href="https://calendly.com/naz-onfolk"
+            href="https://calendly.com/naz-onfolk/25min"
             style={{ boxShadow: "none" }}
             onClick={this.emitAnalyticsEvent}
           >
