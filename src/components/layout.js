@@ -4,42 +4,16 @@ import styled from "styled-components"
 
 import { theme } from "../theme/theme"
 import Footer from "./footer"
-import Button from "./button"
 
+import { Container, Heading, Flex, Box, Button, Center } from "@chakra-ui/react"
 import { rhythm } from "../utils/typography"
-
-const HeaderContainer = styled.header`
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 5rem;
-  padding-bottom: 0;
-
-  @media (max-width: 768px) {
-    padding: 2rem 1.5rem;
-    padding-bottom: 0;
-  }
-`
-
-const HeaderOptions = styled.div`
-  display: flex;
-  align-items: center;
-`
-
-const HeaderOption = styled.h3`
-  margin-top: 0;
-
-  &:hover {
-    color: grey;
-  }
-`
+import { ArrowForwardIcon } from "@chakra-ui/icons"
 
 const SkewBoxContainer = styled.div`
   position: relative;
   padding: ${rhythm(1.5)} 0;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 `
 
 const SkewBox = styled.div`
@@ -65,13 +39,12 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <>
-          <h1
-            style={{
-              fontSize: "2rem",
-              fontFamily: `Palanquin, sans-serif`,
-              marginTop: 0,
-            }}
+        <Flex justify="space-between" align="center">
+          <Heading
+            as="h2"
+            my={0}
+            bgGradient="linear(to-r, #BA42C0, #1b2244)"
+            bgClip="text"
           >
             <Link
               style={{
@@ -83,32 +56,38 @@ class Layout extends React.Component {
             >
               {title}
             </Link>
-          </h1>
-          <HeaderOptions>
-            <HeaderOption>
+          </Heading>
+          <Flex>
+            <Heading
+              as="h2"
+              size="md"
+              my={0}
+              _hover={{ opacity: "0.7", cursor: "pointer" }}
+            >
               <Link style={{ boxShadow: `none`, color: "inherit" }} to={`/api`}>
                 API
               </Link>
-            </HeaderOption>
-            <HeaderOption style={{ marginLeft: "1.5rem" }}>
+            </Heading>
+            <Heading
+              as="h2"
+              size="md"
+              my={0}
+              _hover={{ opacity: "0.7", cursor: "pointer" }}
+              ml={4}
+            >
               <Link
                 style={{ boxShadow: `none`, color: "inherit" }}
                 to={`/blog`}
               >
                 Blog
               </Link>
-            </HeaderOption>
-          </HeaderOptions>
-        </>
+            </Heading>
+          </Flex>
+        </Flex>
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: `Palanquin, sans-serif`,
-            marginTop: 0,
-          }}
-        >
+        <Heading as="h2" my={0}>
           <Link
             style={{
               boxShadow: `none`,
@@ -119,30 +98,23 @@ class Layout extends React.Component {
           >
             {title}
           </Link>
-        </h3>
+        </Heading>
       )
     }
     return (
       <>
         <Wrapper>
-          <HeaderContainer>{header}</HeaderContainer>
+          <Box mx={[0, 6]} mt={6}>
+            <Container maxW="container.lg">{header}</Container>
 
-          <div
-            style={{
-              marginLeft: `auto`,
-              marginRight: `auto`,
-              maxWidth: rhythm(24),
-              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-            }}
-          >
             <main>{children}</main>
-          </div>
+          </Box>
 
           {location.pathname === rootPath && (
             <>
               <SkewBoxContainer>
                 <SkewBox />
-                <ContentContainerWithImage>
+                <Container maxW="container.lg" py={8} mx={[0, 6]}>
                   <ContentHeaderSmall>A system that scales</ContentHeaderSmall>
                   <ContentHeaderLarge>
                     All your people information in one place
@@ -157,31 +129,42 @@ class Layout extends React.Component {
                     right up until payday. Payroll is reported to HMRC from the
                     same tool – no 3rd party needed.
                   </Content>
-                </ContentContainerWithImage>
+                </Container>
               </SkewBoxContainer>
 
-              <ContentContainer>
-                <ContentHeaderSmall style={{ marginTop: "3rem" }}>
-                  Who we are
-                </ContentHeaderSmall>
-                <ContentHeaderLarge>
-                  We've been building Monzo Bank for the last 4 years
-                </ContentHeaderLarge>
-                <Content>
-                  Having worked in extensively in operations, financial crime,
-                  and growth, we understand what process automation is all
-                  about.
-                </Content>
-                <Content>
-                  We're at home building software at scale that saves time on
-                  internal processes.
-                </Content>
-                <a href="https://calendly.com/naz-onfolk/25min">
-                  <Button marginTop="2rem" marginBottom="2rem">
-                    Book a demo
-                  </Button>
-                </a>
-              </ContentContainer>
+              <Center>
+                <Container maxW="container.lg" pb={8} pt={16} mx={[0, 6]}>
+                  <ContentHeaderSmall>Who we are</ContentHeaderSmall>
+                  <ContentHeaderLarge>
+                    We've been building Monzo Bank for the last 4 years
+                  </ContentHeaderLarge>
+                  <Content>
+                    Having worked in extensively in operations, financial crime,
+                    and growth, we understand what process automation is all
+                    about.
+                  </Content>
+                  <Content>
+                    We're at home building software at scale that saves time on
+                    internal processes.
+                  </Content>
+                  <a href="https://calendly.com/naz-onfolk/25min">
+                    <Button
+                      my={8}
+                      rightIcon={<ArrowForwardIcon />}
+                      color="#eeeeee"
+                      bg="#1b2244"
+                      _hover={{ opacity: "0.7", cursor: "pointer" }}
+                      border="none"
+                      fontWeight="500"
+                      letterSpacing="0.05em"
+                      size="lg"
+                      variant="solid"
+                    >
+                      Book a demo
+                    </Button>
+                  </a>
+                </Container>
+              </Center>
             </>
           )}
 
@@ -194,25 +177,6 @@ class Layout extends React.Component {
 
 const Wrapper = styled.div`
   min-height: 100vh;
-`
-
-const ContentContainer = styled.div`
-  max-width: 42em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
-`
-
-const ContentContainerWithImage = styled.div`
-  max-width: 42em;
-  margin-left: auto;
-  margin-right: auto;
-  //margin-top: 20rem;
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
-
-  @media (max-width: 768px) {
-    //margin-top: 8rem;
-  }
 `
 
 const ContentHeaderSmall = styled.h4`

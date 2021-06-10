@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { theme } from "../theme/theme"
 import husky from "../../content/assets/hyko-logo-grey.svg"
-import { rhythm } from "../utils/typography"
+import { Container } from "@chakra-ui/react"
 
 const Footers = styled.div`
   overflow: hidden;
@@ -25,6 +25,8 @@ const FooterContainer = styled.div`
   box-sizing: border-box;
   padding-top: 94px;
   padding-bottom: 94px;
+  display: flex;
+  justify-content: center;
 `
 
 const Items = styled.div`
@@ -46,21 +48,17 @@ const FinalSkewBox = styled.div`
   bottom: -60px;
 `
 
-const Content = styled.footer`
-  color: ${theme.color.lightGrey};
-
-  max-width: 42em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
-`
-
 function Footer() {
   return (
     <Footers>
       <FooterContainer>
         <FinalSkewBox />
-        <Content>
+
+        <Container
+          maxW="container.lg"
+          color={theme.color.lightGrey}
+          mx={[0, 6]}
+        >
           <Items>
             <Link
               style={{
@@ -118,7 +116,7 @@ function Footer() {
           <span style={{ fontSize: "14px" }}>
             © Onfolk.com {new Date().getFullYear()}
           </span>
-        </Content>
+        </Container>
       </FooterContainer>
     </Footers>
   )

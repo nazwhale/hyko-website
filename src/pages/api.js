@@ -2,37 +2,14 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
-import Button from "../components/button"
 import styled from "styled-components"
-import { theme } from "../theme/theme"
+import { Container, Heading, Text, Button } from "@chakra-ui/react"
+import { ArrowForwardIcon } from "@chakra-ui/icons"
 
 const HeroTextContainer = styled.div`
   display: flex;
-  align-items: center;
   flex-direction: column;
   margin-bottom: 1rem;
-  text-align: center;
-`
-
-const HeroSubtitle = styled.p`
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 1rem;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
-`
-
-const ButtonExplainer = styled.p`
-  font-size: 18px;
-  font-weight: 200;
-  color: ${theme.color.darkGrey};
-  margin-top: 1rem;
-  margin-bottom: 0;
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
 `
 
 function API(props) {
@@ -45,33 +22,40 @@ function API(props) {
         title="The Payroll API for the UK"
         keywords={[`payroll`, `api`, `uk`, `integrate`, `remote`]}
       />
-      <HeroTextContainer>
-        <h1>
-          The payroll API for the UK
-          <br />
-        </h1>
-        <HeroSubtitle>
-          We're building a modern payroll API for the next generation of
-          accounting and HR products
-          <br />
-        </HeroSubtitle>
-        <a href="https://calendly.com/naz-onfolk" style={{ boxShadow: "none" }}>
-          <Button
-            isBig={true}
-            fontSize="1.2rem"
-            marginBottom="1rem"
-            height="4rem"
-            paddingHorizontal="40px"
+      <Container maxW="container.lg" mb={24}>
+        <HeroTextContainer>
+          <Heading size="3xl" as="h1">
+            The payroll API for the UK
+          </Heading>
+          <Text fontSize={["xl", "2xl"]}>
+            Onolk's modern API is built to power next generation of accounting
+            and HR products
+          </Text>
+          <a
+            href="https://calendly.com/naz-onfolk"
+            style={{ boxShadow: "none" }}
           >
-            Talk to us
-          </Button>
-        </a>
-        <ButtonExplainer>
-          For early partners we're open to building to your spec
-          <br />
-          Documentation + sandbox arriving summer '21
-        </ButtonExplainer>
-      </HeroTextContainer>
+            <Button
+              my={4}
+              mb={8}
+              rightIcon={<ArrowForwardIcon />}
+              color="#eeeeee"
+              bg="#1b2244"
+              _hover={{ opacity: "0.7", cursor: "pointer" }}
+              border="none"
+              fontWeight="500"
+              letterSpacing="0.05em"
+              size="lg"
+              variant="solid"
+            >
+              Talk to us
+            </Button>
+          </a>
+          <Text color="gray" fontWeight={200} fontSize="lg">
+            Sandbox arriving summer '21
+          </Text>
+        </HeroTextContainer>
+      </Container>
     </Layout>
   )
 }

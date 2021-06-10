@@ -2,11 +2,19 @@ import React from "react"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
-import { Heading, Box, Text, VStack, Wrap } from "@chakra-ui/react"
+import {
+  Heading,
+  Box,
+  Text,
+  VStack,
+  Wrap,
+  Button,
+  Container,
+} from "@chakra-ui/react"
 
 import Layout from "../components/layout"
-import Button from "../components/button"
 import Seo from "../components/seo"
+import { ArrowForwardIcon } from "@chakra-ui/icons"
 
 class IndexPage extends React.Component {
   emitAnalyticsEvent = () => {
@@ -30,63 +38,89 @@ class IndexPage extends React.Component {
           title="The All-In-One People Platform for Payroll, HR, Time-Off"
           keywords={[`payroll`, `software`, `hr`, `provider`, `hris`]}
         />
-        <VStack textAlign="center" spacing={8} mb={8}>
-          <Img
-            fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
-            alt="logos"
-          />
-          <Heading size="2xl" as="h1" lineHeight={"1.2"}>
-            Finally, HR and payroll in one place
-          </Heading>
-          l
-          <Text fontSize={["xl", "2xl"]}>
-            A modern people system with time-off, pensions, HR, payroll,
-            onboarding, and a Xero integration.
-          </Text>
-          <Text fontSize={["xl", "2xl"]}>At £5 per employee per month</Text>
-          <a
-            href="https://calendly.com/naz-onfolk/25min"
-            style={{ boxShadow: "none" }}
-            onClick={this.emitAnalyticsEvent}
-          >
-            <Button
-              isBig={true}
-              fontSize="1.2rem"
-              marginBottom="1rem"
-              height="4rem"
-              paddingHorizontal="40px"
-            >
-              Book a demo
-            </Button>
-          </a>
-          <Box>
-            <Heading
-              textTransform="uppercase"
-              color="#1B2244"
-              size="xs"
-              opacity="0.3"
-              mt={4}
-            >
-              trusted by
+        <Container maxW="container.lg">
+          <VStack spacing={6} mb={16} alignItems="normal">
+            <Heading size="3xl" as="h1" lineHeight={"1.2"}>
+              Finally, HR and payroll in one place
             </Heading>
-            <Wrap justify="center" spacing={16} mt={2} opacity="0.4">
-              <Box pt={1.5}>
-                <Img
-                  fixed={data.commaLogo.childImageSharp.fixed}
-                  alt="partnerLogo"
-                />
+
+            <Text fontSize={["xl", "2xl"]}>
+              A modern people system with time-off, pensions, HR, payroll,
+              onboarding, and a Xero integration. At £5 / employee / month.
+            </Text>
+
+            <a
+              href="https://calendly.com/naz-onfolk/25min"
+              style={{ boxShadow: "none" }}
+              onClick={this.emitAnalyticsEvent}
+            >
+              <Button
+                my={4}
+                rightIcon={<ArrowForwardIcon />}
+                color="#eeeeee"
+                bg="#1b2244"
+                _hover={{ opacity: "0.7", cursor: "pointer" }}
+                border="none"
+                fontWeight="500"
+                letterSpacing="0.05em"
+                size="lg"
+                variant="solid"
+              >
+                Book a demo
+              </Button>
+            </a>
+
+            <Wrap spacing={16}>
+              <Box>
+                <Heading
+                  textTransform="uppercase"
+                  color="#1B2244"
+                  size="xs"
+                  opacity="0.3"
+                  mt={4}
+                >
+                  trusted by
+                </Heading>
+                <Wrap spacing={16} mt={2} opacity="0.4">
+                  <Box pt={2}>
+                    <Img
+                      fixed={data.commaLogo.childImageSharp.fixed}
+                      alt="partnerLogo"
+                    />
+                  </Box>
+                  <Box pt={1}>
+                    <Img
+                      fixed={data.cableLogo.childImageSharp.fixed}
+                      alt="partnerLogo"
+                    />
+                  </Box>
+                  <Img
+                    fixed={data.twentyTwentyLogo.childImageSharp.fixed}
+                    alt="partnerLogo"
+                  />
+                </Wrap>
               </Box>
-              <Img
-                fixed={data.cableLogo.childImageSharp.fixed}
-                alt="partnerLogo"
-              />
-              <Img
-                fixed={data.twentyTwentyLogo.childImageSharp.fixed}
-                alt="partnerLogo"
-              />
+              <Box>
+                <Heading
+                  textTransform="uppercase"
+                  color="#1B2244"
+                  size="xs"
+                  opacity="0.3"
+                  mt={[0, 4]}
+                  mb={6}
+                >
+                  integrated
+                </Heading>
+                <Wrap spacing={16}>
+                  <Img
+                    fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
+                    alt="logos"
+                  />
+                </Wrap>
+              </Box>
             </Wrap>
-          </Box>
-        </VStack>
+          </VStack>
+        </Container>
       </Layout>
     )
   }

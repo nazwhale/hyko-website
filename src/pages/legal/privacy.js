@@ -2,10 +2,10 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import { rhythm, scale } from "../../utils/typography"
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Button from "../../components/button"
+import { Container } from "@chakra-ui/react"
 
 class PrivacyPolicyPage extends React.Component {
   render() {
@@ -18,34 +18,30 @@ class PrivacyPolicyPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo title={pageTitle} />
-        <h1 style={{ marginTop: "1rem", marginBottom: "3rem" }}>
-          <span role="img" aria-label="blog">
-            🔐{" "}
-          </span>
-          {pageTitle}
-        </h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {`${pageInfo.frontmatter.date} • ${pageInfo.timeToRead} min read`}
-        </p>
 
-        <div>
-          <p>{pageInfo.frontmatter.description}</p>
-        </div>
+        <Container maxW="container.md" mb={40}>
+          <h1 style={{ marginTop: "1rem", marginBottom: "3rem" }}>
+            <span role="img" aria-label="blog">
+              🔐{" "}
+            </span>
+            {pageTitle}
+          </h1>
+          <p>
+            {`${pageInfo.frontmatter.date} • ${pageInfo.timeToRead} min read`}
+          </p>
 
-        <MDXRenderer>{pageInfo.body}</MDXRenderer>
+          <div>
+            <p>{pageInfo.frontmatter.description}</p>
+          </div>
 
-        <Link to="/">
-          <Button marginTop="85px" marginBottom="85px">
-            Go Home
-          </Button>
-        </Link>
+          <MDXRenderer>{pageInfo.body}</MDXRenderer>
+
+          <Link to="/">
+            <Button marginTop="85px" marginBottom="85px">
+              Go Home
+            </Button>
+          </Link>
+        </Container>
       </Layout>
     )
   }

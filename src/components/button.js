@@ -32,6 +32,7 @@ const ButtonWrapper = styled.button`
 
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  height: ${props => props.props.isBig && "3.5rem"};
 
   @media (max-width: 480px) {
     width: ${props => props.props.isBig && "95vw"};
