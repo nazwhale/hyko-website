@@ -81,7 +81,7 @@ class IndexPage extends React.Component {
                 >
                   trusted by
                 </Heading>
-                <Wrap spacing={16} mt={2} opacity="0.4">
+                <Wrap spacing={8} mt={2} opacity="0.4">
                   <Box pt={2}>
                     <Img
                       fixed={data.commaLogo.childImageSharp.fixed}
@@ -111,7 +111,7 @@ class IndexPage extends React.Component {
                 >
                   integrated
                 </Heading>
-                <Wrap spacing={16}>
+                <Wrap spacing={8}>
                   <Img
                     fixed={data.hmrcXeroNestLogos.childImageSharp.fixed}
                     alt="logos"
