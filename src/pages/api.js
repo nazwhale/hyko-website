@@ -28,8 +28,9 @@ function API(props) {
             The payroll API for the UK
           </Heading>
           <Text fontSize={["xl", "2xl"]}>
-            Onolk's modern API is built to power next generation of accounting
-            and HR products
+            Onfolk's API is built to power next generation of HR, accounting,
+            and payment products. So you can start posting payruns for your
+            clients.
           </Text>
           <a
             href="https://calendly.com/naz-onfolk"
