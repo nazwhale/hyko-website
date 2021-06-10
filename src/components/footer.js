@@ -73,19 +73,19 @@ function Footer() {
               Blog
             </Link>
 
-            <span style={{ fontSize: "14px" }}>
-              <a
-                href="http://docs.onfolk.com"
-                style={{
-                  textDecoration: "none",
-                  color: "inherit",
-                  boxShadow: "none",
-                  paddingRight: "1rem",
-                }}
-              >
-                API documentation
-              </a>
-            </span>
+            {/*<span style={{ fontSize: "14px" }}>*/}
+            {/*  <a*/}
+            {/*    href="http://docs.onfolk.com"*/}
+            {/*    style={{*/}
+            {/*      textDecoration: "none",*/}
+            {/*      color: "inherit",*/}
+            {/*      boxShadow: "none",*/}
+            {/*      paddingRight: "1rem",*/}
+            {/*    }}*/}
+            {/*  >*/}
+            {/*    API documentation*/}
+            {/*  </a>*/}
+            {/*</span>*/}
 
             <Link
               style={{

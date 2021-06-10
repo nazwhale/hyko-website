@@ -40,14 +40,15 @@ class IndexPage extends React.Component {
         />
         <Container maxW="container.lg">
           <VStack spacing={6} mb={16} alignItems="normal">
-            <Heading size="3xl" as="h1" lineHeight={"1.2"}>
+            <Heading size="3xl" as="h1" lineHeight={"1.2"} mb={0}>
               Finally, HR and payroll in one place
             </Heading>
 
             <Text fontSize={["xl", "2xl"]}>
               A modern people system with time-off, pensions, HR, payroll,
-              onboarding, and a Xero integration. At £5 / employee / month.
+              onboarding, and a suite of integrations.
             </Text>
+            <Text fontSize={["xl", "2xl"]}>At £5 / employee / month.</Text>
 
             <a
               href="https://calendly.com/naz-onfolk/25min"
