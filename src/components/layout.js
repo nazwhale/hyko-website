@@ -5,7 +5,15 @@ import styled from "styled-components"
 import { theme } from "../theme/theme"
 import Footer from "./footer"
 
-import { Container, Heading, Flex, Box, Button, Center } from "@chakra-ui/react"
+import {
+  Container,
+  Heading,
+  Flex,
+  Box,
+  Button,
+  Center,
+  Text,
+} from "@chakra-ui/react"
 import { rhythm } from "../utils/typography"
 import { ArrowForwardIcon } from "@chakra-ui/icons"
 
@@ -57,31 +65,20 @@ class Layout extends React.Component {
               {title}
             </Link>
           </Heading>
-          <Flex>
-            <Heading
-              as="h2"
-              size="md"
-              my={0}
-              _hover={{ opacity: "0.7", cursor: "pointer" }}
-            >
+          <Flex alignItems="center">
+            <Text letterSpacing="0.05em" fontWeight={600} mb={0}>
               <Link style={{ boxShadow: `none`, color: "inherit" }} to={`/api`}>
                 API
               </Link>
-            </Heading>
-            <Heading
-              as="h2"
-              size="md"
-              my={0}
-              _hover={{ opacity: "0.7", cursor: "pointer" }}
-              ml={4}
-            >
+            </Text>
+            <Text letterSpacing="0.05em" fontWeight={600} mb={0} ml={4}>
               <Link
                 style={{ boxShadow: `none`, color: "inherit" }}
                 to={`/blog`}
               >
                 Blog
               </Link>
-            </Heading>
+            </Text>
           </Flex>
         </Flex>
       )
