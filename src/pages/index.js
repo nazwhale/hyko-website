@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import { theme } from "../theme/theme"
 import Layout from "../components/layout"
@@ -106,7 +107,7 @@ class IndexPage extends React.Component {
             A complete platform with onboarding, HR, payroll, time-off (coming
             soon!), and Xero & Nest integrations
           </HeroSubtitle>
-          <a
+          <OutboundLink
             href="https://calendly.com/naz-hyko"
             style={{ boxShadow: "none" }}
             onClick={this.emitAnalyticsEvent}
@@ -120,7 +121,7 @@ class IndexPage extends React.Component {
             >
               Book a demo
             </Button>
-          </a>
+          </OutboundLink>
         </HeroTextContainer>
       </Layout>
     )

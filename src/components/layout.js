@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 import { theme } from "../theme/theme"
 import Footer from "./footer"
@@ -176,11 +177,11 @@ class Layout extends React.Component {
                   We're at home building software at scale that saves time on
                   internal processes.
                 </Content>
-                <a href="https://calendly.com/naz-hyko">
+                <OutboundLink href="https://calendly.com/naz-hyko">
                   <Button marginTop="2rem" marginBottom="2rem">
                     Book a demo
                   </Button>
-                </a>
+                </OutboundLink>
               </ContentContainer>
             </>
           )}
