@@ -15,6 +15,7 @@ import {
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { ArrowForwardIcon } from "@chakra-ui/icons"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 class IndexPage extends React.Component {
   emitAnalyticsEvent = () => {
@@ -50,7 +51,7 @@ class IndexPage extends React.Component {
             </Text>
             <Text fontSize={["xl", "2xl"]}>At £5 / employee / month.</Text>
 
-            <a
+            <OutboundLink
               href="https://calendly.com/naz-onfolk/25min"
               style={{ boxShadow: "none" }}
               onClick={this.emitAnalyticsEvent}
@@ -69,7 +70,7 @@ class IndexPage extends React.Component {
               >
                 Book a demo
               </Button>
-            </a>
+            </OutboundLink>
 
             <Wrap spacing={16}>
               <Box>
