@@ -51,7 +51,7 @@ class Layout extends React.Component {
           <Heading
             as="h2"
             my={0}
-            bgGradient="linear(to-r, #BA42C0, #1b2244)"
+            bgGradient="linear(to-r, rgba(27, 34, 68, 0.65), rgba(27, 34, 68))"
             bgClip="text"
           >
             <Link
