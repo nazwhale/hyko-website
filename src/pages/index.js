@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
               A modern people system with time-off, pensions, HR, payroll,
               onboarding, and a suite of integrations.
             </Text>
-            <Text fontSize={["xl", "2xl"]}>At £5 / employee / month.</Text>
+            <Text fontSize={["xl", "2xl"]}>At £8 / employee / month.</Text>
 
             <OutboundLink
               href="https://calendly.com/naz-onfolk/25min"
