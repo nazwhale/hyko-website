@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.3.0",
     "@mdx-js/mdx": "^1.6.21",
     "@mdx-js/react": "^1.6.21",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.11.1",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.6.1",
