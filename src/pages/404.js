@@ -16,7 +16,7 @@ class NotFoundPage extends React.Component {
         <Seo title="404: Not Found" />
         <Container maxW="container.md" mb={40}>
           <h1>Not Found</h1>
-          <p>You're in a place that doesn&#39;t exist</p>
+          <p>You're in a place that doesn&#39;t exist...</p>
           <Link to="/">
             <Button marginTop="2rem">Go Home</Button>
           </Link>

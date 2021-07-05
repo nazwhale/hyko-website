@@ -68,15 +68,19 @@ function CostsPage(props) {
   })
 
   function totalOtherCosts() {
-    return otherCosts
-      .map((c, index) => {
-        let cost = parseFloat(c.cost)
-        if (c.frequency === "monthly") {
-          cost = cost * 12
-        }
-        return cost
-      })
-      .reduce((a, b) => a + b, 0)
+    return (
+      Math.round(
+        otherCosts
+          .map((c, index) => {
+            let cost = parseFloat(c.cost)
+            if (c.frequency === "monthly") {
+              cost = cost * 12
+            }
+            return cost
+          })
+          .reduce((a, b) => a + b, 0) * 100
+      ) / 100
+    )
   }
 
   function total() {
